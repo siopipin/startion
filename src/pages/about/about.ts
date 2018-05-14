@@ -14,8 +14,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'about.html',
 })
 export class AboutPage {
-
+  title : string =  "Latihan menggunakan variable Global";
+  text : string;
+  komentar : string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.text = "Ini adalah text dari variabel Global";
+    this.komentar = "Ini adalah komentar dari variabel Global";
   }
 
   ionViewDidLoad() {
