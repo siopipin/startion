@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SettingPage } from '../setting/setting';
+import { HomePage } from './../home/home';
 
 /**
  * Generated class for the AboutPage page.
@@ -24,6 +26,14 @@ export class AboutPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutPage');
+  }
+
+  GoSetting(){
+    this.navCtrl.push(SettingPage);
+  }
+
+  GoHomepage(){
+    this.navCtrl.push(HomePage);
   }
 
 }

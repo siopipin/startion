@@ -1,18 +1,38 @@
-<!--
-  Generated template for the SettingPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>setting</ion-title>
-  </ion-navbar>
+    <ion-buttons start>
+      <button ion-button color="danger" (click)="GoAboutpage()"> 
+        <ion-icon name="ios-person-outline"></ion-icon> About</button>
+    </ion-buttons>
 
+    <ion-title>Setting</ion-title>
+    <ion-buttons end>
+      <button ion-button>Profile</button>
+    </ion-buttons>
+  </ion-navbar>
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  <div padding>
+    <div text-center>
+        <h3>{{ Tsetting }}</h3>
+    </div>
+     <button ion-button color="secondary" block> Search </button>
+  </div>
 
+  <div text-center>
+    <button ion-button outline> LEFT </button>
+    <button ion-button outline color="dark"> Center </button>
+    <button ion-button outline color="secondary"> RIGHT </button>
+  </div>
+
+  <div padding text-justify>
+    <p> {{ TPesan }}</p>
+  </div>
+
+  <button ion-button clear full large>Simpan</button>
+
+  <button ion-button color="danger" full ion-button >Start</button>
 </ion-content>

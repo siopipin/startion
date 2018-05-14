@@ -7,7 +7,18 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>about</ion-title>
+    
+    <ion-buttons start>
+      <button ion-button color="danger" (click)="GoSetting()">
+        <ion-icon name="ios-settings-outline"></ion-icon> Setting </button>
+    </ion-buttons>
+
+    <ion-title>About</ion-title>
+
+    <ion-buttons end>
+      <button ion-button (click)="GoHomepage()">Home</button>
+    </ion-buttons>
+
   </ion-navbar>
 
 </ion-header>
