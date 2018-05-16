@@ -5,10 +5,9 @@
       <button ion-button color="danger" (click)="GoAboutpage()"> 
         <ion-icon name="ios-person-outline"></ion-icon> About</button>
     </ion-buttons>
-
     <ion-title>Setting</ion-title>
     <ion-buttons end>
-      <button ion-button>Profile</button>
+      <button ion-button (click)="GoListpage()">Listui</button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -30,6 +29,7 @@
 
   <div padding text-justify>
     <p> {{ TPesan }}</p>
+    <p> {{ Tsubpesan }}</p>
   </div>
 
   <button ion-button clear full large>Simpan</button>

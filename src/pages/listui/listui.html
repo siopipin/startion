@@ -1,0 +1,25 @@
+<!--
+  Generated template for the ListuiPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>listui</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list >
+    <ion-item detail-push (click)="GotoHomePage()">Home</ion-item>
+    <ion-item (click)="GotoAboutPage()">About</ion-item>
+    <ion-item (click)="GotoListPage()">List</ion-item>
+    <ion-item detail-push>
+      <ion-icon name="ios-settings" color="primary" (click)="GotoSettingpage()"> Setting </ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
