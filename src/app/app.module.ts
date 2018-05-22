@@ -8,6 +8,8 @@ import { ListPage } from '../pages/list/list';
 import { AboutPage } from './../pages/about/about';
 import { SettingPage } from './../pages/setting/setting';
 import { ListuiPage } from './../pages/listui/listui';
+import { ListavatarPage } from './../pages/listavatar/listavatar';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     AboutPage,
     SettingPage,
-    ListuiPage
+    ListuiPage,
+    ListavatarPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     AboutPage,
     SettingPage,
-    ListuiPage
+    ListuiPage,
+    ListavatarPage
   ],
   providers: [
     StatusBar,

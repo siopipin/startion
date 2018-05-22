@@ -5,12 +5,8 @@ import { AboutPage } from '../about/about';
 import { HomePage } from './../home/home';
 import { ListPage } from './../list/list';
 import { SettingPage } from '../setting/setting';
-/**
- * Generated class for the ListuiPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ListavatarPage } from './../listavatar/listavatar';
+
 
 @IonicPage()
 @Component({
@@ -40,6 +36,10 @@ export class ListuiPage {
 
   GotoSettingpage(){
     this.navCtrl.push(SettingPage);
+  }
+
+  GotoListavatar(){
+    this.navCtrl.push(ListavatarPage);
   }
 
 }
