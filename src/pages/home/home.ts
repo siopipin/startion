@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+//pages
+import { ListionicPage } from './../listionic/listionic';
+
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -9,6 +13,10 @@ export class HomePage {
   msg: any;
   constructor(public navCtrl: NavController) {
     this.msg = "hello World";
+  }
+
+  GotoList(){
+    this.navCtrl.push(ListionicPage);
   }
 
 }

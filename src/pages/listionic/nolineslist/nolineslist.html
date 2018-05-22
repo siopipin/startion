@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>nolineslist</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h3>Attribut No lines</h3>
+  <p>Adding the no-lines attribute will hide the dividers between list items</p>
+
+  <br>
+  <hr>
+  <ion-list no-lines>
+    <ion-item *ngFor="let makanan of makanans">
+      {{makanan}}
+    </ion-item>
+  </ion-list>
+</ion-content>

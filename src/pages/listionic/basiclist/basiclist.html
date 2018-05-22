@@ -1,0 +1,27 @@
+<!--
+  Generated template for the BasiclistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>basiclist</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <h3>Basic List</h3>
+  <p>Secara default Basic list menampilkan list dengan garis pemisah</p>
+  <br>
+  <hr>
+  <ion-list >
+    <h4>Kacang dengan kalori tertinggi</h4>
+    <ion-item *ngFor="let kacang of kacangs" (click)="kacangterpilih()" >
+      {{kacang}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>

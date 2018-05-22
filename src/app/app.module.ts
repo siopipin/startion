@@ -9,6 +9,11 @@ import { AboutPage } from './../pages/about/about';
 import { SettingPage } from './../pages/setting/setting';
 import { ListuiPage } from './../pages/listui/listui';
 import { ListavatarPage } from './../pages/listavatar/listavatar';
+import { ListionicPage } from './../pages/listionic/listionic';
+import { BasiclistPage } from './../pages/listionic/basiclist/basiclist';
+import { NolineslistPage } from './../pages/listionic/nolineslist/nolineslist';
+import { InsetlistPage } from './../pages/listionic/insetlist/insetlist';
+import { ListdevidersPage } from './../pages/listionic/listdeviders/listdeviders';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,7 +27,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     SettingPage,
     ListuiPage,
-    ListavatarPage
+    ListavatarPage,
+    ListionicPage,
+    BasiclistPage,
+    NolineslistPage,
+    InsetlistPage,
+    ListdevidersPage
+
   ],
   imports: [
     BrowserModule,
@@ -36,7 +47,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     SettingPage,
     ListuiPage,
-    ListavatarPage
+    ListavatarPage,
+    ListionicPage,
+    BasiclistPage,
+    NolineslistPage,
+    InsetlistPage,
+    ListdevidersPage
   ],
   providers: [
     StatusBar,
