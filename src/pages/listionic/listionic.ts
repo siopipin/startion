@@ -6,6 +6,7 @@ import { BasiclistPage } from './basiclist/basiclist';
 import { NolineslistPage } from './nolineslist/nolineslist';
 import { InsetlistPage } from './insetlist/insetlist';
 import { ListdevidersPage } from './listdeviders/listdeviders';
+import { IconlistPage } from './iconlist/iconlist';
 
 
 @IonicPage()
@@ -36,6 +37,10 @@ export class ListionicPage {
 
   Gotodevider(){
     this.navCtrl.push(ListdevidersPage);
+  }
+
+  Gotoiconlist(){
+    this.navCtrl.push(IconlistPage)
   }
 
 }

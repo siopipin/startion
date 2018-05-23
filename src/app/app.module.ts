@@ -14,6 +14,7 @@ import { BasiclistPage } from './../pages/listionic/basiclist/basiclist';
 import { NolineslistPage } from './../pages/listionic/nolineslist/nolineslist';
 import { InsetlistPage } from './../pages/listionic/insetlist/insetlist';
 import { ListdevidersPage } from './../pages/listionic/listdeviders/listdeviders';
+import { IconlistPage } from './../pages/listionic/iconlist/iconlist';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -32,7 +33,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BasiclistPage,
     NolineslistPage,
     InsetlistPage,
-    ListdevidersPage
+    ListdevidersPage,
+    IconlistPage
 
   ],
   imports: [
@@ -52,7 +54,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BasiclistPage,
     NolineslistPage,
     InsetlistPage,
-    ListdevidersPage
+    ListdevidersPage,
+    IconlistPage
   ],
   providers: [
     StatusBar,
