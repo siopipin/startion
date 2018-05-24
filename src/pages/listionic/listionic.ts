@@ -9,6 +9,8 @@ import { ListdevidersPage } from './listdeviders/listdeviders';
 import { IconlistPage } from './iconlist/iconlist';
 import { AvatarlistPage } from './avatarlist/avatarlist';
 import { SlidinglistPage } from './slidinglist/slidinglist';
+import { ThumbnaillistPage } from './thumbnaillist/thumbnaillist';
+
 
 @IonicPage()
 @Component({
@@ -50,6 +52,10 @@ export class ListionicPage {
 
   Gotoslidingpage(){
     this.navCtrl.push(SlidinglistPage);
+  }
+
+  Gotothumbnailpage(){
+    this.navCtrl.push(ThumbnaillistPage);
   }
 
 }

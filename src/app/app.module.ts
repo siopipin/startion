@@ -17,6 +17,8 @@ import { ListdevidersPage } from './../pages/listionic/listdeviders/listdeviders
 import { IconlistPage } from './../pages/listionic/iconlist/iconlist';
 import { AvatarlistPage } from './../pages/listionic/avatarlist/avatarlist';
 import { SlidinglistPage } from './../pages/listionic/slidinglist/slidinglist';
+import { ThumbnaillistPage } from './../pages/listionic/thumbnaillist/thumbnaillist';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -37,7 +39,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListdevidersPage,
     IconlistPage,
     AvatarlistPage,
-    SlidinglistPage
+    SlidinglistPage,
+    ThumbnaillistPage
 
   ],
   imports: [
@@ -60,7 +63,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListdevidersPage,
     IconlistPage,
     AvatarlistPage,
-    SlidinglistPage
+    SlidinglistPage,
+    ThumbnaillistPage
   ],
   providers: [
     StatusBar,
