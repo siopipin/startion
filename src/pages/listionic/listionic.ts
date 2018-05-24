@@ -7,7 +7,8 @@ import { NolineslistPage } from './nolineslist/nolineslist';
 import { InsetlistPage } from './insetlist/insetlist';
 import { ListdevidersPage } from './listdeviders/listdeviders';
 import { IconlistPage } from './iconlist/iconlist';
-
+import { AvatarlistPage } from './avatarlist/avatarlist';
+import { SlidinglistPage } from './slidinglist/slidinglist';
 
 @IonicPage()
 @Component({
@@ -41,6 +42,14 @@ export class ListionicPage {
 
   Gotoiconlist(){
     this.navCtrl.push(IconlistPage)
+  }
+
+  Gotoavatarlist(){
+    this.navCtrl.push(AvatarlistPage);
+  }
+
+  Gotoslidingpage(){
+    this.navCtrl.push(SlidinglistPage);
   }
 
 }
