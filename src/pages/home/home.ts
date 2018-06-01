@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
 import { ListionicPage } from './../listionic/listionic';
 import { InputpagePage } from '../inputpage/inputpage';
 import { NgModelPage } from './../ng-model/ng-model';
-
+import { FragmentPage } from './../fragment/fragment';
 
 @Component({
   selector: 'page-home',
@@ -27,6 +27,10 @@ export class HomePage {
 
   Gotongmodelpage(){
     this.navCtrl.push(NgModelPage);
+  }
+
+  GotoFragementpage(){
+    this.navCtrl.push(FragmentPage);
   }
 
 }

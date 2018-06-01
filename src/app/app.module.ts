@@ -22,7 +22,8 @@ import { InputpagePage } from './../pages/inputpage/inputpage';
 import { NgModelPage } from './../pages/ng-model/ng-model';
 import { SmsPage } from './../pages/ng-model/sms/sms';
 import { TodoPage } from './../pages/ng-model/todo/todo';
-
+import { FragmentPage } from './../pages/fragment/fragment';
+import { FragmentheaderPage } from './../pages/fragment/fragmentheader/fragmentheader';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -49,7 +50,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     InputpagePage,
     NgModelPage,
     SmsPage,
-    TodoPage
+    TodoPage,
+    FragmentPage,
+    FragmentheaderPage
 
   ],
   imports: [
@@ -77,7 +80,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     InputpagePage,
     NgModelPage,
     SmsPage,
-    TodoPage
+    TodoPage,
+    FragmentPage,
+    FragmentheaderPage
   ],
   providers: [
     StatusBar,

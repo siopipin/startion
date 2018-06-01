@@ -14,5 +14,55 @@
 
 
 <ion-content padding>
+  <ion-segment [(ngModel)]="segment">
+    <ion-segment-button value="avatar">
+      Contoh
+    </ion-segment-button>
+    <ion-segment-button value="thumbnail">
+      Latihan
+    </ion-segment-button>
+  </ion-segment>
 
+  <div [ngSwitch]="segment">
+
+    <ion-list *ngSwitchCase="'avatar'" >
+      <ion-item (click)="GotoFragmentheaderpage()">
+          <ion-avatar item-left>
+            <img src="assets/avatar/a2.jpeg">
+          </ion-avatar>
+          <h2>Fregment pada header</h2>
+          <p>Dari API documentasi</p>
+      </ion-item>
+
+      <ion-item >
+        <ion-avatar item-left>
+          <img src="assets/avatar/a1.png">
+        </ion-avatar>
+        <h2>Citra Eka</h2>
+        <p>Seseorang</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'thumbnail'" >
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="assets/avatar/a1.png">
+          </ion-thumbnail>
+          <h2>Sio Jurnalis Pipin</h2>
+          <p>Programmer</p>
+          <button ion-button clear item-right>Tombol</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-left>
+              <img src="assets/avatar/a2.jpeg">
+            </ion-thumbnail>
+            <h2>Sio Pipin</h2>
+            <p>Programmer</p>
+            <button ion-button clear item-right>Tombol</button>
+          </ion-item>
+      </ion-list>
+    </ion-list>
+  </div> 
 </ion-content>
