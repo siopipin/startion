@@ -1,0 +1,40 @@
+<!--
+  Generated template for the SmsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>sms</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label stacked>Dari</ion-label>
+    <ion-input type="text" placeholder="Nama Pengirim" [(ngModel)]="pengirim"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label stacked>Kepada</ion-label>
+    <ion-input type="text" placeholder="Nama Penerima" [(ngModel)]="penerima" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Pesan</ion-label>
+    <ion-input type="text" placeholder="Pesan" [(ngModel)]="pesan" ></ion-input>
+  </ion-item>
+
+  <br>
+
+  <div *ngIf="pesan" padding>
+    <h3>Hallo, {{ penerima }}</h3>
+    <p>{{pesan}}</p>
+    <br>
+    <b>Dari : {{ pengirim }}</b>
+  </div>
+</ion-content>

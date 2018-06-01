@@ -20,6 +20,10 @@ import { SlidinglistPage } from './../pages/listionic/slidinglist/slidinglist';
 import { ThumbnaillistPage } from './../pages/listionic/thumbnaillist/thumbnaillist';
 import { InputpagePage } from './../pages/inputpage/inputpage';
 import { NgModelPage } from './../pages/ng-model/ng-model';
+import { SmsPage } from './../pages/ng-model/sms/sms';
+import { TodoPage } from './../pages/ng-model/todo/todo';
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -42,7 +46,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AvatarlistPage,
     SlidinglistPage,
     ThumbnaillistPage,
-    InputpagePage
+    InputpagePage,
+    NgModelPage,
+    SmsPage,
+    TodoPage
 
   ],
   imports: [
@@ -67,7 +74,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AvatarlistPage,
     SlidinglistPage,
     ThumbnaillistPage,
-    InputpagePage
+    InputpagePage,
+    NgModelPage,
+    SmsPage,
+    TodoPage
   ],
   providers: [
     StatusBar,

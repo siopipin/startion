@@ -1,0 +1,35 @@
+<!--
+  Generated template for the TodoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>todo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="logForm()" >
+    <ion-item>
+      <ion-label stacked>Judul</ion-label>
+      <ion-input type="text" placeholder="Judul" [(ngModel)]="todo.judul" name="judul" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Deskripsi</ion-label>
+      <ion-input type="text" [(ngModel)]="todo.deskripsi" name="deskripsi"></ion-input>
+    </ion-item>
+
+    <ion-item >
+      <ion-textarea placeholder="Masukkan disini" [(ngModel)]="todo.catatan" name="catata" autocomplete="on" autocorrect="on"></ion-textarea>
+    </ion-item>
+
+    <button ion-button type="submit" block>Add ToDo</button>
+  </form>
+
+</ion-content>

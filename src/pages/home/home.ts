@@ -4,6 +4,8 @@ import { NavController } from 'ionic-angular';
 //pages
 import { ListionicPage } from './../listionic/listionic';
 import { InputpagePage } from '../inputpage/inputpage';
+import { NgModelPage } from './../ng-model/ng-model';
+
 
 @Component({
   selector: 'page-home',
@@ -21,6 +23,10 @@ export class HomePage {
 
   Gotoinputpage(){
     this.navCtrl.push(InputpagePage);
+  }
+
+  Gotongmodelpage(){
+    this.navCtrl.push(NgModelPage);
   }
 
 }

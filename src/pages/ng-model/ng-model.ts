@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SmsPage } from './sms/sms';
+import { TodoPage } from './todo/todo';
 
-/**
- * Generated class for the NgModelPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -20,6 +16,14 @@ export class NgModelPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NgModelPage');
+  }
+
+  Gotosmspage(){
+    this.navCtrl.push(SmsPage);
+  }
+
+  Gototodopage(){
+    this.navCtrl.push(TodoPage);
   }
 
 }
