@@ -24,7 +24,9 @@ import { SmsPage } from './../pages/ng-model/sms/sms';
 import { TodoPage } from './../pages/ng-model/todo/todo';
 import { FragmentPage } from './../pages/fragment/fragment';
 import { FragmentheaderPage } from './../pages/fragment/fragmentheader/fragmentheader';
-
+import { LoginPage } from '../pages/login/login';
+import { PassingdataPage } from '../pages/passingdata/passingdata';
+import { DaftarmantanPage } from '../pages/daftarmantan/daftarmantan';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -52,7 +54,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SmsPage,
     TodoPage,
     FragmentPage,
-    FragmentheaderPage
+    FragmentheaderPage,
+    LoginPage,
+    PassingdataPage,
+    DaftarmantanPage
 
   ],
   imports: [
@@ -82,7 +87,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SmsPage,
     TodoPage,
     FragmentPage,
-    FragmentheaderPage
+    FragmentheaderPage,
+    LoginPage,
+    PassingdataPage,
+    DaftarmantanPage
   ],
   providers: [
     StatusBar,

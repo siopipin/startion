@@ -1,36 +1,68 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-
-//pages
-import { ListionicPage } from './../listionic/listionic';
-import { InputpagePage } from '../inputpage/inputpage';
-import { NgModelPage } from './../ng-model/ng-model';
+import { PassingdataPage } from './../passingdata/passingdata';
 import { FragmentPage } from './../fragment/fragment';
+import { InputpagePage } from './../inputpage/inputpage';
+import { SettingPage } from './../setting/setting';
+import { NgModelPage } from './../ng-model/ng-model';
+import { ListionicPage } from './../listionic/listionic';
+import { ListavatarPage } from './../listavatar/listavatar';
+import { AboutPage } from './../about/about';
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ListuiPage } from '../listui/listui';
+import { LoginPage } from '../login/login';
 
+
+/**
+ * Generated class for the HomePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
 })
 export class HomePage {
-  msg: any;
-  constructor(public navCtrl: NavController) {
-    this.msg = "hello World";
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  GotoList(){
-    this.navCtrl.push(ListionicPage);
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad HomePage');
   }
 
-  Gotoinputpage(){
+  GotoAboutpage(){
+    this.navCtrl.push(AboutPage);
+  }
+  GotoFragmentpage(){
+    this.navCtrl.push(FragmentPage);
+  }
+  GotoInputPage(){
     this.navCtrl.push(InputpagePage);
   }
-
-  Gotongmodelpage(){
+  GotoSettingpage(){
+    this.navCtrl.push(SettingPage);
+  }
+  GotoNgmodelpage(){
     this.navCtrl.push(NgModelPage);
   }
+  GotoListionicpage(){
+    this.navCtrl.push(ListionicPage);
+  }
+  GotoListavatarpage(){
+    this.navCtrl.push(ListavatarPage);
+  }
 
-  GotoFragementpage(){
-    this.navCtrl.push(FragmentPage);
+  Gotolistuipage(){
+    this.navCtrl.push(ListuiPage);
+  }
+  Gotologinpage(){
+    this.navCtrl.push(LoginPage);
+  }
+  GotoPassingdata(){
+    this.navCtrl.push(PassingdataPage);
   }
 
 }

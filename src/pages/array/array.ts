@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the FragmentheaderPage page.
+ * Generated class for the ArrayPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-fragmentheader',
-  templateUrl: 'fragmentheader.html',
+  selector: 'page-array',
+  templateUrl: 'array.html',
 })
-export class FragmentheaderPage {
-
-  segment = "login";
+export class ArrayPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-
-    console.log('ionViewDidLoad FragmentheaderPage');
+    console.log('ionViewDidLoad ArrayPage');
   }
-  
 
 }

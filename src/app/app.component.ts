@@ -9,6 +9,7 @@ import { AboutPage } from './../pages/about/about';
 import { SettingPage } from '../pages/setting/setting';
 import { ListuiPage } from './../pages/listui/listui';
 import { ListavatarPage } from './../pages/listavatar/listavatar';
+import { LoginPage } from './../pages/login/login';
 
 
 @Component({
@@ -17,7 +18,7 @@ import { ListavatarPage } from './../pages/listavatar/listavatar';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
 

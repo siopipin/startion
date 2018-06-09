@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
 /**
  * Generated class for the InputpagePage page.
  *
@@ -20,6 +19,10 @@ export class InputpagePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InputpagePage');
+  }
+
+  Doback(){
+    this.navCtrl.pop()
   }
 
 }

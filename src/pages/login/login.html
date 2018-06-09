@@ -1,0 +1,64 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-segment [(ngModel)]="login">
+    <ion-segment-button value="satu">
+      Login
+    </ion-segment-button>
+
+    <ion-segment-button value="dua">
+      Register
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="login" >
+    <div *ngSwitchCase="'satu'">
+      <div text-center>
+        <br>
+        <h3 color="secondary">Login</h3>
+      </div>
+      <ion-item>
+        <ion-label stacked > Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked > Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+
+      <button ion-button full color="dark" (click)="DoLogin()">Login</button>
+    </div>
+
+    <div *ngSwitchCase="'dua'">
+      <ion-item>
+        <ion-label floating >Email</ion-label>
+        <ion-input type="email" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating >Password</ion-label>
+        <ion-input type="password" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating >Re-Password</ion-label>
+        <ion-input type="password" ></ion-input>
+      </ion-item>
+
+      <button ion-button full >Register</button>
+    </div>
+  </div>
+</ion-content>
