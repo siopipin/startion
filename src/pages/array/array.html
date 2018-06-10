@@ -14,5 +14,40 @@
 
 
 <ion-content padding>
+  <ion-segment [(ngModel)]="daftar">
+    <ion-segment-button value="tentangarray">
+      Tentang Array`
+    </ion-segment-button>
+    <ion-segment-button value="makan">
+      Makanan
+    </ion-segment-button>
+    <ion-segment-button value="minum">
+      Minuman
+    </ion-segment-button>
+  </ion-segment>
 
+  <div [ngSwitch]="daftar">
+    <div *ngSwitchCase="'tentangarray'">
+      <ion-item (click)="Kemoviepage()">
+        <ion-avatar item-left>
+          <img src="assets/avatar/a1.png">
+        </ion-avatar>
+        <h2>Daftar Movie</h2>
+        <p>Input daftar movie dalam sebuah array</p>
+      </ion-item>
+    </div>
+    <div *ngSwitchCase="'makan'">
+      <p *ngFor="let item of makanan"> Menu {{ item }}</p>
+    </div>
+
+    <div *ngSwitchCase="'minum'">
+      <ion-list-header>
+        <h2 ion-text color="primary">Minuman</h2>
+      </ion-list-header>
+
+      <ion-item *ngFor="let minum of minuman">
+        {{ minum }}
+      </ion-item>
+    </div>
+  </div>
 </ion-content>

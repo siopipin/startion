@@ -15,9 +15,9 @@ import { DaftarmantanPage } from '../daftarmantan/daftarmantan';
 })
 export class PassingdataPage {
 
-  namamantan : string = "";
-  alasan : string = "";
-
+  listnama : any[] = [];
+  namamantan : string;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -25,8 +25,13 @@ export class PassingdataPage {
     console.log('ionViewDidLoad PassingdataPage');
   }
 
-  GotoDaftarmantanpage(){
-    this.navCtrl.push(DaftarmantanPage, {nama : this.namamantan, alasan : this.alasan});
+  DoTambahmantan(){
+    this.listnama.push(this.namamantan);
+    this.namamantan = "";
+  }
+
+  GotoDaftarmantan(){
+    this.navCtrl.push(DaftarmantanPage, {listnama : this.listnama}) 
   }
 
 }

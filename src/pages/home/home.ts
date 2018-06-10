@@ -10,6 +10,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ListuiPage } from '../listui/listui';
 import { LoginPage } from '../login/login';
+import { ArrayPage } from '../array/array';
+import { ArrayObjectPage } from '../array-object/array-object';
 
 
 /**
@@ -65,4 +67,11 @@ export class HomePage {
     this.navCtrl.push(PassingdataPage);
   }
 
+  GotoArraypage(){
+    this.navCtrl.push(ArrayPage);
+  }
+
+  GotoArrayObjet(){
+    this.navCtrl.push(ArrayObjectPage);
+  }
 }

@@ -1,0 +1,56 @@
+<!--
+  Generated template for the MoviepagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>moviepage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-segment [(ngModel)]="segmentmovie">
+    <ion-segment-button value="film">
+      Input Movie
+    </ion-segment-button>
+    <ion-segment-button value="list">
+      List Movie
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="segmentmovie">
+    <div *ngSwitchCase="'film'">
+      <ion-list-header>
+        Masukkan Move terbaru
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label floating>Judul Movie</ion-label>
+        <ion-input type="text" [(ngModel)]="movie"></ion-input>
+      </ion-item>
+
+      <button ion-button full around color="primary" (click)="DoAddmovie()">Tambah Movie</button>
+    </div>
+
+    <div *ngSwitchCase="'list'">
+      <ion-list-header>
+        <h2 ion-text color="primary">List Movie</h2>
+      </ion-list-header>
+
+      <ion-item *ngFor="let film of movies; let i = index">
+        {{film}}
+        <button ion-button (click)="DoHapusmovie(i)" clear icon-only color="danger" item-end>
+          <ion-icon name="ios-trash-outline"></ion-icon>
+        </button>
+      </ion-item>
+
+      <p>Total {{movies.length}}</p>
+    </div>
+  </div>
+
+</ion-content>

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the DaftarmantanPage page.
+ * Generated class for the DaftarmahasiswaPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,24 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-daftarmantan',
-  templateUrl: 'daftarmantan.html',
+  selector: 'page-daftarmahasiswa',
+  templateUrl: 'daftarmahasiswa.html',
 })
-export class DaftarmantanPage {
-  namas: any[] = [];
+export class DaftarmahasiswaPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.namas = this.navParams.data.listnama;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DaftarmantanPage');
+    console.log('ionViewDidLoad DaftarmahasiswaPage');
   }
 
-  Dohapusmantan(index){
-    this.namas.splice(index, 1);
-  }
-
-  Goback(){
-    this.navCtrl.pop();
-  }
 }

@@ -14,9 +14,18 @@
 
 
 <ion-content padding>
-  <ion-list >
-    <ion-item >
-      {{namas}} karena {{alasans}}
-    </ion-item>
-  </ion-list>
+  <h2 ion-text color="primary">Daftar Mantan</h2>
+  <ion-item *ngFor="let mantan of namas; let i = index">
+    {{ mantan }}
+    <button ion-button clear icon-only item-end (click)="Dohapusmantan(i)">
+      <ion-icon name="ios-trash-outline"></ion-icon>
+    </button>
+  </ion-item>
+  <ion-item>
+    Total :
+    <button ion-button clear color="danger" item-end>
+      {{namas.length}}
+    </button>
+  </ion-item>
+  <button ion-button full (click)="Goback()">Kembali</button>
 </ion-content>

@@ -1,3 +1,6 @@
+import { DaftarmahasiswaPage } from './../pages/daftarmahasiswa/daftarmahasiswa';
+import { ArrayObjectPage } from './../pages/array-object/array-object';
+import { ArrayPage } from './../pages/array/array';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -30,6 +33,8 @@ import { DaftarmantanPage } from '../pages/daftarmantan/daftarmantan';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { MoviepagePage } from '../pages/moviepage/moviepage';
+import { MenumakananPage } from '../pages/menumakanan/menumakanan';
 
 @NgModule({
   declarations: [
@@ -57,7 +62,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FragmentheaderPage,
     LoginPage,
     PassingdataPage,
-    DaftarmantanPage
+    DaftarmantanPage,
+    ArrayPage,
+    MoviepagePage,
+    ArrayObjectPage,
+    MenumakananPage,
+    DaftarmahasiswaPage
 
   ],
   imports: [
@@ -90,7 +100,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FragmentheaderPage,
     LoginPage,
     PassingdataPage,
-    DaftarmantanPage
+    DaftarmantanPage,
+    ArrayPage,
+    MoviepagePage,
+    ArrayObjectPage,
+    MenumakananPage,
+    DaftarmahasiswaPage
   ],
   providers: [
     StatusBar,

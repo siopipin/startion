@@ -18,13 +18,13 @@
     <h3>Mantan Terbaru</h3>
   </div>
   <ion-item>
-    <ion-label stacked > Nama</ion-label>
+    <ion-label stacked> Nama</ion-label>
     <ion-input type="text" [(ngModel)]="namamantan"></ion-input>
   </ion-item>
-  <ion-item>
-    <ion-label stacked > Alasan Putus</ion-label>
-    <ion-input type="text" [(ngModel)]="alasan"></ion-input>
-  </ion-item>
 
-  <button ion-button full (click)="GotoDaftarmantanpage()">Simpan</button>
+  <div text-center>
+    <button ion-button aroutn color="danger" (click)="GotoDaftarmantan()">Lihat Mantan</button>
+    <button ion-button around (click)="DoTambahmantan()">Tambah Mantan</button>
+  </div>
+
 </ion-content>
