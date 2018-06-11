@@ -14,5 +14,37 @@
 
 
 <ion-content padding>
+  <ion-segment [(ngModel)]="pilihan">
+    <ion-segment-button value="materi">
+      Pengantar
+    </ion-segment-button>
+    <ion-segment-button value="contoh">
+      Contoh
+    </ion-segment-button>
+  </ion-segment>
 
+  <div [ngSwitch]="pilihan">
+    <div *ngSwitchCase="'materi'">
+      <br>
+      <h2 text-center>Export Variabel</h2>
+      <hr>
+      <div text-justify>
+        <p>
+          Terkadang saat kita membangun aplikasi mobil, membutuhkan satu atau beberapa variabel yang kita pakai berulang-ulang atau
+          dipakai di lebih dari satu halaman. Dengan sifat halaman atau class di Ionic yang berdiri sendiri, tidak memungkin
+          untuk kita mendeklarasi sebuah variabel di salah satu class dan dapat di pakai di halaman/class lain. Untuk mengatasi
+          permasalahan ini, kita dapat menggunakan fitur export pada variabel agar variabel tersebut dapat diakses oleh semua
+          class, beserta juga nilainya.
+        </p>
+
+        <p>
+          Oleh karena itu kita akan belajara pemakaian export untuk mendeklarasikan variabel ‘super’ global yang dapat dipakai di semua class atau halaman.
+        </p>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'contoh'">
+      <p>COntoh</p>
+    </div>
+  </div>
 </ion-content>

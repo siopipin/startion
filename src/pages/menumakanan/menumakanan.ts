@@ -2,6 +2,10 @@ import { DaftarmahasiswaPage } from './../daftarmahasiswa/daftarmahasiswa';
 import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams } from "ionic-angular";
 
+//super global variabel
+import { FILMS } from './../../app/app.config';
+
+
 /**
  * Generated class for the MenumakananPage page.
  *
@@ -49,10 +53,7 @@ export class MenumakananPage {
   };
 
   //ini untuk movie
-  films : any = [
-    {judul : "Anonymous",tahun: 2017, kategori: "hacker"},
-    {judul : "Fast and various",tahun: 2018, kategori: "action"}
-  ];
+  films : any = FILMS;
 
   film : any = {
     judul : null, tahun: null, kategori: null

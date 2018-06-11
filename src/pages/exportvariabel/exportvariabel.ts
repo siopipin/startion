@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'exportvariabel.html',
 })
 export class ExportvariabelPage {
+  pilihan = "materi";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
