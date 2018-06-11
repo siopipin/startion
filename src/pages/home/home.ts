@@ -12,6 +12,7 @@ import { ListuiPage } from '../listui/listui';
 import { LoginPage } from '../login/login';
 import { ArrayPage } from '../array/array';
 import { ArrayObjectPage } from '../array-object/array-object';
+import { ExportvariabelPage } from '../exportvariabel/exportvariabel';
 
 
 /**
@@ -73,5 +74,9 @@ export class HomePage {
 
   GotoArrayObjet(){
     this.navCtrl.push(ArrayObjectPage);
+  }
+
+  GotoExportVariabel(){
+    this.navCtrl.push(ExportvariabelPage);
   }
 }

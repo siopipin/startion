@@ -16,7 +16,6 @@ import { DaftarmahasiswaPage } from '../daftarmahasiswa/daftarmahasiswa';
   templateUrl: 'array-object.html',
 })
 export class ArrayObjectPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

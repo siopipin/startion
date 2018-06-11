@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the DaftarmahasiswaPage page.
+ * Generated class for the ExportvariabelPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,17 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-daftarmahasiswa',
-  templateUrl: 'daftarmahasiswa.html',
+  selector: 'page-exportvariabel',
+  templateUrl: 'exportvariabel.html',
 })
-export class DaftarmahasiswaPage {
-  film: any = {};
+export class ExportvariabelPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.film = this.navParams.data;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DaftarmahasiswaPage');
+    console.log('ionViewDidLoad ExportvariabelPage');
   }
 
 }

@@ -1,3 +1,4 @@
+import { ExportvariabelPage } from './../pages/exportvariabel/exportvariabel';
 import { DaftarmahasiswaPage } from './../pages/daftarmahasiswa/daftarmahasiswa';
 import { ArrayObjectPage } from './../pages/array-object/array-object';
 import { ArrayPage } from './../pages/array/array';
@@ -67,7 +68,8 @@ import { MenumakananPage } from '../pages/menumakanan/menumakanan';
     MoviepagePage,
     ArrayObjectPage,
     MenumakananPage,
-    DaftarmahasiswaPage
+    DaftarmahasiswaPage,
+    ExportvariabelPage
 
   ],
   imports: [
@@ -105,7 +107,8 @@ import { MenumakananPage } from '../pages/menumakanan/menumakanan';
     MoviepagePage,
     ArrayObjectPage,
     MenumakananPage,
-    DaftarmahasiswaPage
+    DaftarmahasiswaPage,
+    ExportvariabelPage
   ],
   providers: [
     StatusBar,

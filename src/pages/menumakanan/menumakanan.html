@@ -7,26 +7,91 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>menumakanan</ion-title>
+    <ion-title>Menu Makanan</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-item>
-    <ion-label floating >Nama</ion-label>
-    <ion-input type="text" [(ngModel)]="makanan.judul"></ion-input>
-  </ion-item>
 
-  <ion-item>
-    <ion-label floating >Tahun</ion-label>
-    <ion-input type="number" [(ngModel)]="makanan.tahun" ></ion-input>
-  </ion-item>
+  <ion-segment [(ngModel)]="pilihan">
+    <ion-segment-button value="makanan">
+      Makanan
+    </ion-segment-button>
+    <ion-segment-button value="movie">
+      Movie
+    </ion-segment-button>
+  </ion-segment>
 
-  <button ion-button full (click)="Doaddmakanan()"></button>
+  <div [ngSwitch]="pilihan">
+    <div *ngSwitchCase="'makanan'">
+      <ion-item>
+        <ion-label floating>judul</ion-label>
+        <ion-input type="text" [(ngModel)]="movie.title"></ion-input>
+      </ion-item>
 
-  <div *ngFor="let makanan of daftar_makanan">
-    <p>{{ makanan.judul}} pada tahun ({{ makanan.tahun }})</p>
+      <ion-item>
+        <ion-label floating>Deskripsi</ion-label>
+        <ion-input type="text" [(ngModel)]="movie.desk"></ion-input>
+      </ion-item>
+
+      <button ion-button full (click)="Doaddmovie()">Tambah</button>
+      <button ion-button full (click)="Gotodaftarmhs()">Lihat</button>
+      <!-- 
+      <div *ngFor="let makanan of daftar_makanan">
+        <p>{{ makanan.judul}} pada tahun ({{ makanan.tahun }})</p>
+      </div> -->
+      <!-- <hr>
+      <h3>Daftar makanan</h3>
+      <div *ngFor="let item of menu">
+        <p>{{ item.id }} {{ item.nama }}</p>
+      </div> -->
+      <hr>
+      <h3>Daftar film</h3>
+      <div *ngFor="let item of movies">
+        <p>{{ item.title }} {{ item.desk }}</p>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'movie'">
+      <ion-list>
+        
+        <ion-item>
+          <ion-label stacked > Judul</ion-label>
+          <ion-input type="text" [(ngModel)]="film.judul"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked > Tahun</ion-label>
+          <ion-input type="number" [(ngModel)]="film.tahun"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked > Kategori</ion-label>
+          <ion-input type="text" [(ngModel)]="film.Kategori"></ion-input>
+        </ion-item>
+
+        <button ion-button full (click)="DoaddFilm()">Tambah Film</button>
+        <ion-list-header>
+          <h2 ion-text color="primary">Sedang tampil</h2>
+        </ion-list-header>
+
+        <ion-item-sliding *ngFor="let item of films; let i = index">
+          <ion-item detail-push (click)="Gotofilm(item)" >
+            <h2>{{ item.judul }} {{ item.tahun }}</h2>
+            <p> {{ item.kategori }}</p>
+          </ion-item>
+          <ion-item-options side="right">
+            <button ion-button icon-only color="danger" item-end (click)="DoRemovefilm(i)">
+              <ion-icon name="ios-trash-outline"></ion-icon>
+            </button>
+          </ion-item-options>
+
+        </ion-item-sliding>
+      </ion-list>
+    </div>
   </div>
+
+
 </ion-content>
