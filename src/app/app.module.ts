@@ -1,3 +1,7 @@
+import { EditdatamhsPage } from './../pages/aplikasisederhana/appdatamhs/editdatamhs/editdatamhs';
+import { TambahdatamhsPage } from './../pages/aplikasisederhana/appdatamhs/tambahdatamhs/tambahdatamhs';
+import { AppdatamhsPage } from './../pages/aplikasisederhana/appdatamhs/appdatamhs';
+import { AplikasisederhanaPage } from './../pages/aplikasisederhana/aplikasisederhana';
 import { ExportvariabelPage } from './../pages/exportvariabel/exportvariabel';
 import { DaftarmahasiswaPage } from './../pages/daftarmahasiswa/daftarmahasiswa';
 import { ArrayObjectPage } from './../pages/array-object/array-object';
@@ -69,7 +73,11 @@ import { MenumakananPage } from '../pages/menumakanan/menumakanan';
     ArrayObjectPage,
     MenumakananPage,
     DaftarmahasiswaPage,
-    ExportvariabelPage
+    ExportvariabelPage,
+    AplikasisederhanaPage,
+    AppdatamhsPage,
+    TambahdatamhsPage,
+    EditdatamhsPage
 
   ],
   imports: [
@@ -108,7 +116,11 @@ import { MenumakananPage } from '../pages/menumakanan/menumakanan';
     ArrayObjectPage,
     MenumakananPage,
     DaftarmahasiswaPage,
-    ExportvariabelPage
+    ExportvariabelPage,
+    AplikasisederhanaPage,
+    AppdatamhsPage,
+    TambahdatamhsPage,
+    EditdatamhsPage
   ],
   providers: [
     StatusBar,

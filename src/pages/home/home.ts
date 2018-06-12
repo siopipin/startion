@@ -1,3 +1,4 @@
+import { AplikasisederhanaPage } from './../aplikasisederhana/aplikasisederhana';
 import { PassingdataPage } from './../passingdata/passingdata';
 import { FragmentPage } from './../fragment/fragment';
 import { InputpagePage } from './../inputpage/inputpage';
@@ -78,5 +79,9 @@ export class HomePage {
 
   GotoExportVariabel(){
     this.navCtrl.push(ExportvariabelPage);
+  }
+
+  GotoAplikasisederhana(){
+    this.navCtrl.push(AplikasisederhanaPage);
   }
 }

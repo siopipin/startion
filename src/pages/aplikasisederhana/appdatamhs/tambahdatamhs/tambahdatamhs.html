@@ -1,0 +1,42 @@
+<!--
+  Generated template for the TambahdatamhsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tambah Mahasiswa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Nim</ion-label>
+      <ion-input type="number" [(ngModel)]="mahasiswa.nim"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Nama</ion-label>
+      <ion-input type="text" [(ngModel)]="mahasiswa.nama"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Jurusan</ion-label>
+      <ion-input type="text" [(ngModel)]="mahasiswa.jurusan"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Kelas</ion-label>
+      <ion-input type="text" [(ngModel)]="mahasiswa.kelas"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Jadwal</ion-label>
+      <ion-input type="text" [(ngModel)]="mahasiswa.jadwal"></ion-input>
+    </ion-item>
+
+    <button ion-button full (click)="DoAddmhs()">Tambah Mahasiswa</button>
+
+  </ion-list>
+</ion-content>
