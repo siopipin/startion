@@ -1,3 +1,4 @@
+import { AlertPage } from './../alert/alert';
 import { AplikasisederhanaPage } from './../aplikasisederhana/aplikasisederhana';
 import { PassingdataPage } from './../passingdata/passingdata';
 import { FragmentPage } from './../fragment/fragment';
@@ -29,6 +30,8 @@ import { ExportvariabelPage } from '../exportvariabel/exportvariabel';
   templateUrl: 'home.html',
 })
 export class HomePage {
+
+  pilihan = "modul";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -83,5 +86,9 @@ export class HomePage {
 
   GotoAplikasisederhana(){
     this.navCtrl.push(AplikasisederhanaPage);
+  }
+
+  GotoAlertpage(){
+    this.navCtrl.push(AlertPage);
   }
 }

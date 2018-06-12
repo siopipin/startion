@@ -1,3 +1,4 @@
+import { AlertPage } from './../pages/alert/alert';
 import { EditdatamhsPage } from './../pages/aplikasisederhana/appdatamhs/editdatamhs/editdatamhs';
 import { TambahdatamhsPage } from './../pages/aplikasisederhana/appdatamhs/tambahdatamhs/tambahdatamhs';
 import { AppdatamhsPage } from './../pages/aplikasisederhana/appdatamhs/appdatamhs';
@@ -77,7 +78,8 @@ import { MenumakananPage } from '../pages/menumakanan/menumakanan';
     AplikasisederhanaPage,
     AppdatamhsPage,
     TambahdatamhsPage,
-    EditdatamhsPage
+    EditdatamhsPage,
+    AlertPage
 
   ],
   imports: [
@@ -120,7 +122,8 @@ import { MenumakananPage } from '../pages/menumakanan/menumakanan';
     AplikasisederhanaPage,
     AppdatamhsPage,
     TambahdatamhsPage,
-    EditdatamhsPage
+    EditdatamhsPage,
+    AlertPage
   ],
   providers: [
     StatusBar,

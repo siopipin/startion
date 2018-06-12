@@ -1,6 +1,6 @@
 import { TambahdatamhsPage } from './tambahdatamhs/tambahdatamhs';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { EditdatamhsPage } from './editdatamhs/editdatamhs';
 import { MAHASISWA } from '../../../app/app.config';
 
@@ -17,8 +17,13 @@ import { MAHASISWA } from '../../../app/app.config';
   templateUrl: 'appdatamhs.html',
 })
 export class AppdatamhsPage {
+  hasil : boolean = false;
   daftarmahasiswa : any = MAHASISWA;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    private alertCtrl : AlertController
+  ) {
   }
 
   ionViewDidLoad() {
@@ -34,7 +39,26 @@ export class AppdatamhsPage {
   }
 
   DoDeletemhs(index){
-    this.daftarmahasiswa.splice(index);
+    let peringatan = this.alertCtrl.create({
+      title: "Peringatan",
+      message: "Anda yakin ingin menghapus data?",
+      buttons: [{
+        text: "Ya, hapus data!",
+        handler : ()=>{
+          this.daftarmahasiswa.splice(index, 1);
+        }
+      },
+      {
+        text: "Tidak, Khilaf",
+        role: "cancel",
+        handler : ()=>{
+          console.log("tidak terhapus")
+        }
+      }
+    ]
+    });
+    peringatan.present();
+    
   }
 
 }
