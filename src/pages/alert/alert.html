@@ -43,17 +43,32 @@
   <hr>
   <br>
   <div>
-    <h2>Input Alert Controller</h2>
-    <p>Alert Controller juga bisa menyajikan input dengan type input yang berbeda-beda layaknya komponen input pada HTML. Di Alert Controller untuk menampilkan input dapat digunakan opsi inputs dengan property type, name, dan placeholder.</p>
+    <h2>Input Alert Controler</h2>
+    <p>Alert Controller juga bisa menyajikan input dengan type input yang berbeda-beda layaknya komponen input pada HTML. Di
+      Alert Controller untuk menampilkan input dapat digunakan opsi inputs dengan property type, name, dan placeholder.</p>
 
-    <button ion-button full (click)="DoInputAlert()"></button>
-    <ion-list >
+    <button ion-button block color="secondary" (click)="DoInputAlert()"> Input Alert </button>
+
+    <ion-list>
       <ion-list-header>
         Daftar Mahasiswa
       </ion-list-header>
-      <ion-item *ngFor="let item of mahasiswa ">
+      <ion-item no-padding *ngFor="let item of mahasiswa">
         {{ item.nim }} {{ item.nama }}
       </ion-item>
     </ion-list>
+  </div>
+  <hr>
+  <br>
+  <div>
+    <h2>Radio Alert</h2>
+    <p text-justify>
+      Penggunaan radio pada Alert Controller sebenarnya sama dengan penggunaan input text Alert seperti contoh sebelumnya. Radio
+      termasuk salah satu type pada komponen input, sehingga pada Alert Controller pun tetap menggunakan opsi inputs.
+    </p>
+
+    <button ion-button full (click)="DoShowRadio()">Pilihan Makan Siang</button>
+
+    <p>{{ hasilradio }}</p>
   </div>
 </ion-content>

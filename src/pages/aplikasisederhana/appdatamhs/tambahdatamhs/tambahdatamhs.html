@@ -33,8 +33,14 @@
     </ion-item>
     <ion-item>
       <ion-label fixed>Jadwal</ion-label>
-      <ion-input type="text" [(ngModel)]="mahasiswa.jadwal"></ion-input>
+      <ion-input type="text" value="{{ radiojadwal }}"></ion-input>
     </ion-item>
+
+    <div>
+      <ion-buttons end>
+        <button ion-button small outline color="danger" (click)="DoShowJadwal()">Jadwal</button>
+      </ion-buttons>
+    </div>
 
     <button ion-button full (click)="DoAddmhs()">Tambah Mahasiswa</button>
     <div *ngIf="hasil"> {{ hasil }}</div>

@@ -15,6 +15,7 @@ import { MAHASISWA } from '../../../../app/app.config';
   templateUrl: 'tambahdatamhs.html',
 })
 export class TambahdatamhsPage {
+  radiojadwal: any;
   hasil: any;
   mahasiswas : any [] = MAHASISWA;
   mahasiswa : any = {
@@ -37,7 +38,9 @@ export class TambahdatamhsPage {
       buttons: [{
         text: "Yakin, saya ingin menyimpan data",
         handler: ()=>{
-          this.hasil = "Data telah tersimpan"
+          this.radiojadwal = this.mahasiswa.jadwal;
+          this.mahasiswas.push(this.mahasiswa);
+          this.mahasiswa = "";
         }
       },
       {
@@ -50,10 +53,40 @@ export class TambahdatamhsPage {
     ]
     });
     peringatan.present();
-    this.mahasiswas.push(this.mahasiswa);
-    this.mahasiswa = "";
+    
   }
 
+  DoShowJadwal(){
+    let jadwal = this.alertCtrl.create({
+      title: 'Jadwal Kuliah'
+    });
+
+    let waktu = ['Pagi', 'Malam'];
+    for(let item of waktu){
+      jadwal.addInput({
+        type: 'radio',
+        value: item,
+        label: item
+      });
+    }
+
+    jadwal.addButton({
+      text: 'Simpan',
+      handler : (data)=>{
+        this.radiojadwal = data
+
+      }
+    });
+
+    jadwal.addButton({
+      text: 'cancel',
+      role: 'cancel',
+      handler: ()=>{
+        console.log('tidak ada');
+      }
+    });
+    jadwal.present();
+  }
 
 
 }

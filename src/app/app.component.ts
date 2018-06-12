@@ -1,15 +1,15 @@
+import { HomePage } from './../pages/home/home';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { AboutPage } from './../pages/about/about';
 import { SettingPage } from '../pages/setting/setting';
 import { ListuiPage } from './../pages/listui/listui';
 import { ListavatarPage } from './../pages/listavatar/listavatar';
-import { LoginPage } from './../pages/login/login';
+//import { LoginPage } from './../pages/login/login';
 
 
 @Component({
@@ -18,7 +18,7 @@ import { LoginPage } from './../pages/login/login';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 

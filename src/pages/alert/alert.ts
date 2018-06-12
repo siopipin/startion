@@ -15,6 +15,7 @@ import { IonicPage, NavController, NavParams, AlertController} from 'ionic-angul
 })
 export class AlertPage {
 
+  hasilradio: any;
   hasil: any;
   mahasiswa: any = [];
 
@@ -91,6 +92,40 @@ export class AlertPage {
       });
 
       pemberitahuan.present();
+  }
+
+  //Radio Alert
+  DoShowRadio(){
+    let Pilihanradio = this.alertCtrl.create({
+      title: "Menu Siang ini!"
+    });
+
+    let menus = ["Nasi Goreng", "Ayam Goreng", "Nasi Padang", "Bubur Kacang Ijo"];
+    for(let item of menus){
+      Pilihanradio.addInput({
+        type: 'radio',
+        label: item,
+        value: item,
+      });
+    }
+
+    Pilihanradio.addButton({
+      text: "Simpan",
+      handler: (data)=>{
+        this.hasilradio = data;
+      }
+    });
+
+    Pilihanradio.addButton({
+      text: "Cancel",
+      role: 'cancel',
+      handler: ()=>{
+        console.log('Batal');
+      }
+    });
+
+    Pilihanradio.present();
+
   }
 
 }
