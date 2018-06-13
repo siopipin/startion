@@ -71,4 +71,23 @@
 
     <p>{{ hasilradio }}</p>
   </div>
+
+  <br>
+  <hr>
+  <div>
+    <h2>Chekcbox Alert</h2>
+    <p text-justify>
+      Checkbox Alert adalah jenis alert pada Alert Controller dengan menyajikan pilihan dalam bentuk checbox. Nilai dari checkbox
+      yang dipilih oleh pengguna akan dihasilkan dalam bentuk array, ini dikarenakan pada input checkbox pengguna dapat memilih
+      lebih dari satu pilihan.
+    </p>
+
+    <button ion-button full (click)="DoShowcheckbox()">Hasil</button>
+
+    <ion-list >
+      <ion-item *ngFor="let item of hasilcheckbox" >
+        {{item}}
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

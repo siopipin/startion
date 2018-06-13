@@ -147,6 +147,19 @@
         <h2>Alert components</h2>
         <p>Api Library pada ionic</p>
       </ion-item>
+
+      <ion-item (click)="GotoModalcontrollerpage()">
+        <ion-avatar item-left>
+          <img src="/assets/avatar/a2.jpeg">
+        </ion-avatar>
+        <h2>Modal Controller</h2>
+        <p>Membuat pilihan, atau operasi edit data</p>
+      </ion-item>
+
+      <button ion-button full (click)="DoCloseModal()">Tutup Modal</button>
+      <p text-justify>
+          Kode diatas menunjukkan function tutupModal untuk menutup modal yang sedang aktif, dengan menggunakan ViewController.
+      </p>
     </div>
   </div>
 

@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Modal Controller</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-segment [(ngModel)]="pilihan">
+    <ion-segment-button value="materi">
+      Pengenalan
+    </ion-segment-button>
+    <ion-segment-button value="contoh">
+      Contoh
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="pilihan">
+    <div *ngSwitchCase="'materi'">
+      <br>
+      <h2>MODAL CONTROLLER</h2>
+      <p text-justify>
+        Modal adalah panel konten yang berjalan diatas halaman aplikasi yang sedang aktif. Biasanya digunakan untuk membuat pilihan,
+        atau operasi edit data. Modal di Ionic menggunakan NavController untuk menampilkan konten di dalam stack root nav.
+        Modal ditambahkan ke stack seperti cara kerja NavController.push. Ketika sebuah modal disajikan ke controller nav,
+        overlay ditambahkan ke nav root aplikasi. Setelah modal disajikan, kemudian modal dapat ditutup dari dalam komponen
+        modal itu sendiri dengan menggunakan ViewController dismiss. Untuk menyajikan Modal dengan ModalController, gunakan
+        method ModalController.create(), dan present untuk menampilkan Modal ke dalam layar aplikasi
+      </p>
+    </div>
+
+    <div *ngSwitchCase="'contoh'">
+      <br>
+      <h3>ModalCtrl to Home</h3>
+      <button ion-button full (click)="DoShowmodal()">Tampil</button>
+      <br>
+      <hr>
+      <h3>Passing data dan event dismiss</h3>
+      <p text-justify>Modal juga dapat mengeluarkan data, dan menerima data yang nantinya dapat berguna ketika digunakan untuk proses tambah
+        atau data. Misalnya kita membuat halaman modal dengan input, dan button, saat button diklik modal ditutup dan mengirimkan
+        data ke halaman yang sedang aktif di stack root nav. Untuk membuat event dan mengecek apakah Modal mengirimkan data,
+        dapat digunakan event onDidDismiss setelah create modal.</p>
+      <button ion-button full (click)="DoAddnilaimahasiswa()">Edit</button>
+    </div>
+  </div>
+</ion-content>

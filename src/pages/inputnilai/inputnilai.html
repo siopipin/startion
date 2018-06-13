@@ -1,0 +1,36 @@
+<!--
+  Generated template for the InputnilaiPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button clear color="danger" (click)="Dotutup()">Tutup</button>
+    </ion-buttons>
+    <ion-title>inputnilai</ion-title>
+    <ion-buttons end>
+      <button ion-button clear color="primary" (click)="DoSimpan()">Simpan</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label stacked> Nama</ion-label>
+    <ion-input type="text" [(ngModel)]="mhs.nama"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked> Nim</ion-label>
+    <ion-input type="text" [(ngModel)]="mhs.nim"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked> Nilai</ion-label>
+    <ion-input type="text" [(ngModel)]="mhs.nilai"></ion-input>
+  </ion-item>
+
+</ion-content>

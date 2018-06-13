@@ -9,12 +9,13 @@ import { ListionicPage } from './../listionic/listionic';
 import { ListavatarPage } from './../listavatar/listavatar';
 import { AboutPage } from './../about/about';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { ListuiPage } from '../listui/listui';
 import { LoginPage } from '../login/login';
 import { ArrayPage } from '../array/array';
 import { ArrayObjectPage } from '../array-object/array-object';
 import { ExportvariabelPage } from '../exportvariabel/exportvariabel';
+import { ModalcontrollerPage } from '../modalcontroller/modalcontroller';
 
 
 /**
@@ -33,7 +34,11 @@ export class HomePage {
 
   pilihan = "modul";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    private viewCtrl: ViewController
+  ) {
   }
 
   ionViewDidLoad() {
@@ -90,5 +95,13 @@ export class HomePage {
 
   GotoAlertpage(){
     this.navCtrl.push(AlertPage);
+  }
+
+  GotoModalcontrollerpage(){
+    this.navCtrl.push(ModalcontrollerPage);
+  }
+
+  DoCloseModal(){
+    this.viewCtrl.dismiss();
   }
 }
