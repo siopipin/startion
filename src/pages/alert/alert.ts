@@ -7,7 +7,6 @@ import {
   NavParams,
   AlertController
 } from 'ionic-angular';
-import { ValueTransformer } from '@angular/compiler/src/util';
 
 /**
  * Generated class for the AlertPage page.

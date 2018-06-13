@@ -1,3 +1,4 @@
+import { ActionsheetPage } from './../pages/actionsheet/actionsheet';
 import { ModalcontrollerPage } from './../pages/modalcontroller/modalcontroller';
 import { AlertPage } from './../pages/alert/alert';
 import { EditdatamhsPage } from './../pages/aplikasisederhana/appdatamhs/editdatamhs/editdatamhs';
@@ -43,6 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MoviepagePage } from '../pages/moviepage/moviepage';
 import { MenumakananPage } from '../pages/menumakanan/menumakanan';
 import { InputnilaiPage } from '../pages/inputnilai/inputnilai';
+import { AplikasihobiPage } from '../pages/aplikasisederhana/aplikasihobi/aplikasihobi';
 
 @NgModule({
   declarations: [
@@ -83,7 +85,9 @@ import { InputnilaiPage } from '../pages/inputnilai/inputnilai';
     EditdatamhsPage,
     AlertPage,
     ModalcontrollerPage,
-    InputnilaiPage
+    InputnilaiPage,
+    ActionsheetPage,
+    AplikasihobiPage
 
   ],
   imports: [
@@ -129,7 +133,9 @@ import { InputnilaiPage } from '../pages/inputnilai/inputnilai';
     EditdatamhsPage,
     AlertPage,
     ModalcontrollerPage,
-    InputnilaiPage
+    InputnilaiPage,
+    ActionsheetPage,
+    AplikasihobiPage
   ],
   providers: [
     StatusBar,

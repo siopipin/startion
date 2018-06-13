@@ -17,9 +17,9 @@ import {
 export class ModalcontrollerPage {
 
   pilihan = "materi";
-  mahasiswa : any = [
-    {nama: "", nim: "", nilai: ""}
-  ];
+  // mahasiswa : any = {
+  //   nama: null, nim: null, nilai: null
+  // };
 
   constructor(
     public navCtrl: NavController, 
@@ -46,7 +46,7 @@ export class ModalcontrollerPage {
     let modal = this.ModalCtrl.create(InputnilaiPage, dataawal);
     modal.onDidDismiss((data)=>{
       if(data){
-        this.mahasiswa.push(data);
+        console.log('data', data);
       }
     });
     modal.present();

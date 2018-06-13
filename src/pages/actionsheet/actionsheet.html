@@ -1,0 +1,46 @@
+<!--
+  Generated template for the ActionsheetPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>actionsheet</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-segment [(ngModel)]="pilihan">
+    <ion-segment-button value="materi">
+      Materi
+    </ion-segment-button>
+    <ion-segment-button value="contoh">
+      Contoh
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="pilihan">
+    <div *ngSwitchCase="'materi'">
+      <br>
+      <h2>Action Sheet</h2>
+      <p>
+        Action Sheet merupakan dialog yang memungkinkan pengguna memilih action dari serangkaian pilihan. Sebuah Action Sheet dibuat dari serangkaian array buttons dengan setiap button memiliki property seperti text, role, icon, dan handler.
+        <br>
+        Untuk menampilkan Action Sheet di aplikasi mobil, Ionic menyediakan class library ActionSheetController. Property role pada button terdiri dari cancel, dan destructive. Button tanpa property role akan ditampilkan dengan tampilan default sesuai template platform. Button dengan role cancel akan selalu diletakkan pada posisi bawah button Action Sheet.
+        <br>
+        Button dengan role destructive hanya akan berlaku efektif pada mode ios. ActionSheetController termasuk dalam
+        library ionic-angular, untuk dapat menggunakannya harus di import ke dalam controller</p>
+    </div>
+
+    <div *ngSwitchCase="'contoh'">
+      <br>
+      <h2>Actionsheet sederhana</h2>
+      <button ion-button full (click)="DoShowactionsheet()">Press Me!</button>
+      <p>{{ mahasiswa }}</p>
+    </div>
+  </div>
+</ion-content>

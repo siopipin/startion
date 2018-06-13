@@ -2,6 +2,7 @@ import { AppdatamhsPage } from './appdatamhs/appdatamhs';
 
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AplikasihobiPage } from './aplikasihobi/aplikasihobi';
 
 /**
  * Generated class for the AplikasisederhanaPage page.
@@ -28,4 +29,7 @@ export class AplikasisederhanaPage {
     this.navCtrl.push(AppdatamhsPage);
   }
 
+  GotoAppHobi(){
+    this.navCtrl.push(AplikasihobiPage);
+  }
 }

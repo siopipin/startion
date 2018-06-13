@@ -15,4 +15,12 @@ export var MAHASISWA = [
     {nim: 15117, nama: "Herman wijaya kusuma", jurusan: "Teknik Informatika", kelas: "MW-B", jadwal: "pagi"},
     {nim: 15118, nama: "Citra eka", jurusan: "Sistem Informasi", kelas: "MW-A", jadwal: "pagi"},
     {nim: 15119, nama: "Ridho bangun", jurusan: "Teknik Bangunan", kelas: "MW-A", jadwal: "pagi"}
-]
+];
+
+export var HOBI = [
+  {id: 1, nama: "Sepak Bola", kategori: "bola besar", umur: 21},
+  {id: 2, nama: "Tenis Meja", kategori: "bola kecil", umur: 22},
+  {id: 3, nama: "Volly Ball", kategori: "bola besar", umur: 23},
+  {id: 5, nama: "Basket Ball", kategori: "bola besar", umur: 24},
+  {id: 4, nama: "Kasti", kategori: "bola kecil", umur: 25},
+];

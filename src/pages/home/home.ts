@@ -1,3 +1,4 @@
+import { ActionsheetPage } from './../actionsheet/actionsheet';
 import { AlertPage } from './../alert/alert';
 import { AplikasisederhanaPage } from './../aplikasisederhana/aplikasisederhana';
 import { PassingdataPage } from './../passingdata/passingdata';
@@ -103,5 +104,9 @@ export class HomePage {
 
   DoCloseModal(){
     this.viewCtrl.dismiss();
+  }
+
+  Gotoactionsheet(){
+    this.navCtrl.push(ActionsheetPage);
   }
 }
