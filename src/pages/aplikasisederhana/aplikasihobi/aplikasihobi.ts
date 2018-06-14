@@ -28,6 +28,7 @@ import { EdithobiPage } from './edithobi/edithobi';
 })
 export class AplikasihobiPage {
   hobis: any = HOBI;
+  hasilfavorit : any = [];
 
   constructor(
     public navCtrl: NavController,
@@ -140,6 +141,34 @@ export class AplikasihobiPage {
     edit.present();
   };
 
+  doShowAlertfavorit(){
+    let hoby = HOBI;
+    let doshowfavorit = this.alertCtrl.create({
+      title: 'Daftar Hobi'
+    });
+
+    for(let item of hoby){
+      doshowfavorit.addInput({
+        type: 'checkbox',
+        label: item.nama,
+        value: item.nama
+      });
+    }
+
+    doshowfavorit.addButton({
+      text: 'Tambahkan',
+      handler: (data)=>{
+        this.hasilfavorit = data;
+      }
+    });
+
+    doshowfavorit.addButton({
+      text: 'Cancel',
+      role: 'cancel'
+    })
+
+    doshowfavorit.present();
+  }
 
 
 
