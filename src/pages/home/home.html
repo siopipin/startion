@@ -158,7 +158,7 @@
 
       <button ion-button full (click)="DoCloseModal()">Tutup Modal</button>
       <p text-justify>
-          Kode diatas menunjukkan function tutupModal untuk menutup modal yang sedang aktif, dengan menggunakan ViewController.
+        Kode diatas menunjukkan function tutupModal untuk menutup modal yang sedang aktif, dengan menggunakan ViewController.
       </p>
 
       <ion-item (click)="Gotoactionsheet()">
@@ -183,6 +183,22 @@
         </ion-avatar>
         <h2>Loading Controller</h2>
         <p>Komponen Loading Controller</p>
+      </ion-item>
+
+      <ion-item (click)="gotoLamanpopover()">
+        <ion-avatar item-left>
+          <img src="assets/avatar/a1.png">
+        </ion-avatar>
+        <h2>Pop Over</h2>
+        <p>tampilan yang ‘mengapung’ di atas konten aplikasi</p>
+      </ion-item>
+
+      <ion-item (click)="gotoLamaninvinityscroll()">
+        <ion-avatar item-left>
+          <img src="assets/avatar/a2.jpeg">
+        </ion-avatar>
+        <h2>Invinity Scroll</h2>
+        <p>Men-load data secara bertahap dengan membaca scroll dari pengguna</p>
       </ion-item>
     </div>
   </div>

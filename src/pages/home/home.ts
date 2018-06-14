@@ -19,6 +19,8 @@ import { ArrayObjectPage } from '../array-object/array-object';
 import { ExportvariabelPage } from '../exportvariabel/exportvariabel';
 import { ModalcontrollerPage } from '../modalcontroller/modalcontroller';
 import { LamanLoadingPage } from '../laman-loading/laman-loading';
+import { LamanPopoverPage } from '../laman-popover/laman-popover';
+import { LamaninvinityscrollPage } from '../lamaninvinityscroll/lamaninvinityscroll';
 
 
 /**
@@ -118,5 +120,13 @@ export class HomePage {
 
   gotoLamanloading(){
     this.navCtrl.push(LamanLoadingPage);
+  }
+
+  gotoLamanpopover(){
+    this.navCtrl.push(LamanPopoverPage);
+  }
+
+  gotoLamaninvinityscroll(){
+    this.navCtrl.push(LamaninvinityscrollPage);
   }
 }

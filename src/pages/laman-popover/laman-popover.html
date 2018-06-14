@@ -1,0 +1,53 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>lamanPopover</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="doShowchangebg($event)">
+        <ion-icon name="ios-more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content [ngClass]="{'background-danger' : background == 1, 'background-primary' : background == 2, 'background-secondary' : background == 3, 'background-light' : background == 4}" padding>
+  <ion-segment [(ngModel)]="pilihan">
+    <ion-segment-button value="materi">
+      Materi
+    </ion-segment-button>
+    <ion-segment-button value="contoh">
+      Contoh
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="pilihan">
+    <div *ngSwitchCase="'materi'">
+      <br>
+      <h3>Pop Over</h3>
+      <p text-justify>
+        Popover adalah tampilan yang ‘mengapung’ di atas konten aplikasi. Popover memberikan cara mudah untuk menyajikan atau mengumpulkan
+        informasi dari pengguna dan biasanya digunakan dalam situasi berikut :
+      </p>
+      <ul>
+        <li>Tampilkan informasi lebih lanjut tentang view saat ini</li>
+        <li>Memilih tools atau konfigurasi yang umum digunakan</li>
+        <li>Menyajikan list action dalam satu view</li>
+      </ul>
+      <p>
+        PopoverController digunakan untuk menampilkan Popover pada Ionic. PopoverController Termasuk dalam library ionic-angular,
+        untuk dapat menggunakannya harus di import ke dalam controller</p>
+      <p>
+        Popover dapat dibuat dengan memanggil method create. View yang akan ditampilkan pada Popover harus dimasukkan pada argumen
+        pertama di dalam method create. Data yang akan dikirimkan pada view popover dapat dimasukkan pada argumen kedua di
+        method create (opsional). Di argumen ketiga dapat dimasukkan opsi Popover yang terdiri dari sebagai berikut :
+      </p>
+
+      <img src="assets/imgs/popover.png" alt="Pop over">
+    </div>
+    <div *ngSwitchCase="'contoh'">
+      <button ion-button full color="primary" (click)="doShowpopover($event)">Do Show Popover</button>
+    </div>
+  </div>
+</ion-content>

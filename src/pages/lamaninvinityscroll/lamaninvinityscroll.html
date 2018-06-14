@@ -1,0 +1,30 @@
+<!--
+  Generated template for the LamaninvinityscrollPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>lamaninvinityscroll</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="md-arrow-down" pullingText="Tarik untuk refresh" refreshingSpinner="ios" refreshingText="Mohon tunggu...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-item no-padding *ngFor="let item of items">
+    Item {{item}}
+  </ion-item>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="ios" loadingText="Loading data ekstra...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

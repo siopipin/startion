@@ -11,7 +11,8 @@ import {
   AlertController,
   ActionSheetController,
   ModalController,
-  ToastController
+  ToastController,
+  LoadingController
 } from 'ionic-angular';
 import { EdithobiPage } from './edithobi/edithobi';
 
@@ -37,8 +38,21 @@ export class AplikasihobiPage {
     private alertCtrl: AlertController,
     private actionCtrl: ActionSheetController,
     private modalCtrl: ModalController,
-    private toasCtrl: ToastController
-  ) {}
+    private toasCtrl: ToastController,
+    private loadingCtrl: LoadingController
+  )
+  {
+    let loading = this.loadingCtrl.create({
+      content: 'Sedang memuat data ..',
+      showBackdrop: false,
+      spinner: 'dots',
+      cssClass: 'cssSpinner'
+    });
+    loading.present();
+    setTimeout(() => {
+      loading.dismiss();
+    }, 3000);
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AplikasihobiPage');

@@ -36,6 +36,18 @@
     <div *ngSwitchCase="'contoh'">
       <br>
       <h2>Spinner Loading</h2>
+      <ion-spinner *ngIf="isLoading"></ion-spinner>
+
+      <br>
+      <h3>Loading Controller</h3>
+      <p>
+        Selain menggunakan ion-spinner, Ionic juga menyediakan class library untuk menampilkan indikator loading. Berbeda dengan ion-spinner yang bisa langsung dipanggil pada view (HTML), LoadingController digunakan melalui controller (.*ts).
+        <br>
+        Overlay dari LoadingController saat tampil akan menutup keseluruhan dari layar aplikasi, sehingga memblokir interaksi pengguna dengan aplikasi. Method create, dan present untuk membuat atau menampilkan loading. Method dismiss untuk menutup loading.</p>
+
+        <div text-center>
+          <img src="assets/imgs/loadingctrl.png" alt="loading controller">
+        </div>
     </div>
   </div>
 </ion-content>

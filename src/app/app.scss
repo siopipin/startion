@@ -1,3 +1,4 @@
+// Untuk css toas di lamantoas
 .cssToast{
   .toast-wrapper{
     background: #d0021b;
@@ -9,5 +10,16 @@
     .toas-message{
       color: #dcb3b8;
     }
+  }
+}
+
+// untuk spinner dots di laman aplikasihobi.ts
+.cssSpinner{
+  background: #7e7c7c;
+  .loading-wrapper{
+
+  }
+  .loading-content{
+    color: #dcb3b8;
   }
 }

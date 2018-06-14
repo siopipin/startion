@@ -1,3 +1,6 @@
+import { LamaninvinityscrollPage } from './../pages/lamaninvinityscroll/lamaninvinityscroll';
+import { OptbackgroundPage } from './../pages/optbackground/optbackground';
+import { LamanPopoverPage, MyPopover } from './../pages/laman-popover/laman-popover';
 import { LamantoasPage } from './../pages/lamantoas/lamantoas';
 import { EdithobiPage } from './../pages/aplikasisederhana/aplikasihobi/edithobi/edithobi';
 import { ActionsheetPage } from './../pages/actionsheet/actionsheet';
@@ -93,7 +96,11 @@ import { LamanLoadingPage } from '../pages/laman-loading/laman-loading';
     AplikasihobiPage,
     EdithobiPage,
     LamantoasPage,
-    LamanLoadingPage
+    LamanLoadingPage,
+    LamanPopoverPage,
+    MyPopover,
+    OptbackgroundPage,
+    LamaninvinityscrollPage
 
   ],
   imports: [
@@ -144,7 +151,11 @@ import { LamanLoadingPage } from '../pages/laman-loading/laman-loading';
     AplikasihobiPage,
     EdithobiPage,
     LamantoasPage,
-    LamanLoadingPage
+    LamanLoadingPage,
+    LamanPopoverPage,
+    MyPopover,
+    OptbackgroundPage,
+    LamaninvinityscrollPage
   ],
   providers: [
     StatusBar,
