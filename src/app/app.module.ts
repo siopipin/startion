@@ -1,3 +1,4 @@
+import { EdithobiPage } from './../pages/aplikasisederhana/aplikasihobi/edithobi/edithobi';
 import { ActionsheetPage } from './../pages/actionsheet/actionsheet';
 import { ModalcontrollerPage } from './../pages/modalcontroller/modalcontroller';
 import { AlertPage } from './../pages/alert/alert';
@@ -87,7 +88,8 @@ import { AplikasihobiPage } from '../pages/aplikasisederhana/aplikasihobi/aplika
     ModalcontrollerPage,
     InputnilaiPage,
     ActionsheetPage,
-    AplikasihobiPage
+    AplikasihobiPage,
+    EdithobiPage
 
   ],
   imports: [
@@ -135,7 +137,8 @@ import { AplikasihobiPage } from '../pages/aplikasisederhana/aplikasihobi/aplika
     ModalcontrollerPage,
     InputnilaiPage,
     ActionsheetPage,
-    AplikasihobiPage
+    AplikasihobiPage,
+    EdithobiPage
   ],
   providers: [
     StatusBar,
