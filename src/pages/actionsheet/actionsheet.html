@@ -41,6 +41,31 @@
       <h2>Actionsheet sederhana</h2>
       <button ion-button full (click)="DoShowactionsheet()">Press Me!</button>
       <p>{{ mahasiswa }}</p>
+
+      <br>
+      <hr>
+      <h3>Edit data actionsheet</h3>
+
+      <div *ngFor="let item of kontak; let i = index">
+        <ion-item *ngIf="!item.isEdit" (click)="doShowEdit(i)">
+          <h2>{{ item.nama }}</h2>
+          <p>{{ item.telp }}</p>
+        </ion-item>
+
+        <div *ngIf="item.isEdit">
+          <ion-item>
+            <ion-label stacked > Nama</ion-label>
+            <ion-input type="text" [(ngModel)]="item.nama"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label stacked > Telepon</ion-label>
+            <ion-input type="text" [(ngModel)]="item.telp"></ion-input>
+          </ion-item>
+          <button ion-button full clear (click)="item.isEdit=false">Done</button>
+        </div>
+      </div>
+
     </div>
   </div>
 </ion-content>

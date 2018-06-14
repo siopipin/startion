@@ -1,3 +1,4 @@
+import { LamantoasPage } from './../pages/lamantoas/lamantoas';
 import { EdithobiPage } from './../pages/aplikasisederhana/aplikasihobi/edithobi/edithobi';
 import { ActionsheetPage } from './../pages/actionsheet/actionsheet';
 import { ModalcontrollerPage } from './../pages/modalcontroller/modalcontroller';
@@ -46,6 +47,7 @@ import { MoviepagePage } from '../pages/moviepage/moviepage';
 import { MenumakananPage } from '../pages/menumakanan/menumakanan';
 import { InputnilaiPage } from '../pages/inputnilai/inputnilai';
 import { AplikasihobiPage } from '../pages/aplikasisederhana/aplikasihobi/aplikasihobi';
+import { LamanLoadingPage } from '../pages/laman-loading/laman-loading';
 
 @NgModule({
   declarations: [
@@ -89,7 +91,9 @@ import { AplikasihobiPage } from '../pages/aplikasisederhana/aplikasihobi/aplika
     InputnilaiPage,
     ActionsheetPage,
     AplikasihobiPage,
-    EdithobiPage
+    EdithobiPage,
+    LamantoasPage,
+    LamanLoadingPage
 
   ],
   imports: [
@@ -138,7 +142,9 @@ import { AplikasihobiPage } from '../pages/aplikasisederhana/aplikasihobi/aplika
     InputnilaiPage,
     ActionsheetPage,
     AplikasihobiPage,
-    EdithobiPage
+    EdithobiPage,
+    LamantoasPage,
+    LamanLoadingPage
   ],
   providers: [
     StatusBar,

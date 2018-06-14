@@ -16,6 +16,10 @@ import { IonicPage, NavController, NavParams, ActionSheetController } from 'ioni
 export class ActionsheetPage {
   pilihan = "materi";
   mahasiswa: any = "";
+  kontak : any = [
+    {nama: 'Sio Jurnalis Pipin', telp: '+62 80022 2993', isEdit : false},
+    {nama: 'Sio Herman Wijaya kusuma', telp: '+62 80022 2991', isEdit : false}
+  ];
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -56,5 +60,43 @@ export class ActionsheetPage {
 
     doshowaction.present();
   }
+
+  doShowEdit(index){
+    let doshowedit = this.actsheetCtrl.create({
+      title: 'Kontak saya',
+      subTitle: 'Kumpulan kontak pribadi',
+      buttons : [{
+        text: 'Delete',
+        role: 'destructive',
+        handler: ()=>{
+          this.kontak.splice(index, 1);
+        }
+      },
+      {
+        text: 'Call',
+        handler: ()=>{
+          console.log('Call some phone');
+        }
+      },
+      {
+        text: 'Edit',
+        handler: ()=>{
+          this.kontak[index].isEdit = true;
+        }
+      },
+      {
+        text: 'cancel',
+        role: 'cancel',
+        handler: ()=>{
+          console.log('Cancel');
+        }
+      }
+    ]
+    });
+
+    doshowedit.present();
+  }
+
+
 
 }

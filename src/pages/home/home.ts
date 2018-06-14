@@ -1,3 +1,4 @@
+import { LamantoasPage } from './../lamantoas/lamantoas';
 import { ActionsheetPage } from './../actionsheet/actionsheet';
 import { AlertPage } from './../alert/alert';
 import { AplikasisederhanaPage } from './../aplikasisederhana/aplikasisederhana';
@@ -17,6 +18,7 @@ import { ArrayPage } from '../array/array';
 import { ArrayObjectPage } from '../array-object/array-object';
 import { ExportvariabelPage } from '../exportvariabel/exportvariabel';
 import { ModalcontrollerPage } from '../modalcontroller/modalcontroller';
+import { LamanLoadingPage } from '../laman-loading/laman-loading';
 
 
 /**
@@ -36,7 +38,7 @@ export class HomePage {
   pilihan = "modul";
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     private viewCtrl: ViewController
   ) {
@@ -108,5 +110,13 @@ export class HomePage {
 
   Gotoactionsheet(){
     this.navCtrl.push(ActionsheetPage);
+  }
+
+  Gotolamantoas(){
+    this.navCtrl.push(LamantoasPage);
+  }
+
+  gotoLamanloading(){
+    this.navCtrl.push(LamanLoadingPage);
   }
 }

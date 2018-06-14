@@ -10,7 +10,8 @@ import {
   NavParams,
   AlertController,
   ActionSheetController,
-  ModalController
+  ModalController,
+  ToastController
 } from 'ionic-angular';
 import { EdithobiPage } from './edithobi/edithobi';
 
@@ -35,7 +36,8 @@ export class AplikasihobiPage {
     public navParams: NavParams,
     private alertCtrl: AlertController,
     private actionCtrl: ActionSheetController,
-    private modalCtrl: ModalController
+    private modalCtrl: ModalController,
+    private toasCtrl: ToastController
   ) {}
 
   ionViewDidLoad() {
@@ -72,6 +74,7 @@ export class AplikasihobiPage {
           text: 'Simpan',
           handler: (data) => {
             this.hobis.push(data);
+            this.doShowtoasberhasil();
           }
         },
         {
@@ -82,6 +85,19 @@ export class AplikasihobiPage {
     });
 
     doShowadd.present();
+  }
+
+  doShowtoasberhasil(){
+    let doshowtoasberhasil = this.toasCtrl.create({
+      message: 'Data berhasil di simpan',
+      position: 'bottom',
+      duration: 3000,
+      dismissOnPageChange: true,
+      showCloseButton: true,
+      closeButtonText: 'Tutup'
+    })
+
+    doshowtoasberhasil.present();
   }
 
   doAlertdelete(index) {
