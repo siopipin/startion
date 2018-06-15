@@ -21,6 +21,7 @@ import { ModalcontrollerPage } from '../modalcontroller/modalcontroller';
 import { LamanLoadingPage } from '../laman-loading/laman-loading';
 import { LamanPopoverPage } from '../laman-popover/laman-popover';
 import { LamaninvinityscrollPage } from '../lamaninvinityscroll/lamaninvinityscroll';
+import { BadgesPage } from '../badges/badges';
 
 
 /**
@@ -128,5 +129,9 @@ export class HomePage {
 
   gotoLamaninvinityscroll(){
     this.navCtrl.push(LamaninvinityscrollPage);
+  }
+
+  gotoBadgePage(){
+    this.navCtrl.push(BadgesPage);
   }
 }

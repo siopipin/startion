@@ -16,7 +16,7 @@ import { ArrayObjectPage } from './../pages/array-object/array-object';
 import { ArrayPage } from './../pages/array/array';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicErrorHandler, IonicModule, Badge } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -51,6 +51,7 @@ import { MenumakananPage } from '../pages/menumakanan/menumakanan';
 import { InputnilaiPage } from '../pages/inputnilai/inputnilai';
 import { AplikasihobiPage } from '../pages/aplikasisederhana/aplikasihobi/aplikasihobi';
 import { LamanLoadingPage } from '../pages/laman-loading/laman-loading';
+import { BadgesPage } from '../pages/badges/badges';
 
 @NgModule({
   declarations: [
@@ -100,7 +101,8 @@ import { LamanLoadingPage } from '../pages/laman-loading/laman-loading';
     LamanPopoverPage,
     MyPopover,
     OptbackgroundPage,
-    LamaninvinityscrollPage
+    LamaninvinityscrollPage,
+    BadgesPage
 
   ],
   imports: [
@@ -155,7 +157,8 @@ import { LamanLoadingPage } from '../pages/laman-loading/laman-loading';
     LamanPopoverPage,
     MyPopover,
     OptbackgroundPage,
-    LamaninvinityscrollPage
+    LamaninvinityscrollPage,
+    BadgesPage
   ],
   providers: [
     StatusBar,

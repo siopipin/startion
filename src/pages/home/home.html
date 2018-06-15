@@ -17,7 +17,7 @@
 
   <ion-segment [(ngModel)]="pilihan">
     <ion-segment-button value="modul">
-      Pelajaran Dasar
+      Component
     </ion-segment-button>
     <ion-segment-button value="api">
       Api Library
@@ -33,6 +33,15 @@
         <h2>Project Sederhana</h2>
         <p>Berisi kumpulan aplikasi sederhana</p>
       </ion-item>
+
+      <ion-item (click)="gotoBadgePage()">
+        <ion-avatar item-left>
+          <img src="assets/avatar/a1.png">
+        </ion-avatar>
+        <h2>Badge Component</h2>
+        <p>Pada ionic</p>
+      </ion-item>
+
       <ion-item (click)="GotoAboutpage()">
         <ion-avatar item-left>
           <img src="assets/avatar/a1.png">
