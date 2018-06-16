@@ -1,3 +1,4 @@
+import { CardsPage } from './../pages/cards/cards';
 import { LamaninvinityscrollPage } from './../pages/lamaninvinityscroll/lamaninvinityscroll';
 import { OptbackgroundPage } from './../pages/optbackground/optbackground';
 import { LamanPopoverPage, MyPopover } from './../pages/laman-popover/laman-popover';
@@ -102,7 +103,8 @@ import { BadgesPage } from '../pages/badges/badges';
     MyPopover,
     OptbackgroundPage,
     LamaninvinityscrollPage,
-    BadgesPage
+    BadgesPage,
+    CardsPage
 
   ],
   imports: [
@@ -158,7 +160,8 @@ import { BadgesPage } from '../pages/badges/badges';
     MyPopover,
     OptbackgroundPage,
     LamaninvinityscrollPage,
-    BadgesPage
+    BadgesPage,
+    CardsPage
   ],
   providers: [
     StatusBar,

@@ -1,3 +1,4 @@
+import { CardsPage } from './../cards/cards';
 import { LamantoasPage } from './../lamantoas/lamantoas';
 import { ActionsheetPage } from './../actionsheet/actionsheet';
 import { AlertPage } from './../alert/alert';
@@ -133,5 +134,9 @@ export class HomePage {
 
   gotoBadgePage(){
     this.navCtrl.push(BadgesPage);
+  }
+
+  gotoCardsPage(){
+    this.navCtrl.push(CardsPage);
   }
 }
