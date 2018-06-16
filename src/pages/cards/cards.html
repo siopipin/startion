@@ -28,7 +28,7 @@
       <br>
       <h3>Social Card</h3>
       <ion-card>
-        <ion-item >
+        <ion-item>
           <ion-avatar item-left>
             <img src="assets/avatar/itemionic.png">
           </ion-avatar>
@@ -40,13 +40,13 @@
           Ini adalah contoh penggunaan card komponen ionic untuk advance sosial. Tampilan ini hanya sebagai contoh.
         </ion-card-content>
         <ion-row>
-          <ion-col >
+          <ion-col>
             <button ion-button small clear icon-start>
-              <ion-icon name="thumbs-up" ></ion-icon>
+              <ion-icon name="thumbs-up"></ion-icon>
               12 Like
             </button>
           </ion-col>
-          <ion-col >
+          <ion-col>
             <button ion-button small clear icon-start>
               <ion-icon name="eye"></ion-icon>
               Komentar
@@ -61,7 +61,7 @@
       </ion-card>
 
       <ion-card>
-        <ion-item >
+        <ion-item>
           <ion-avatar item-left>
             <img src="assets/avatar/a2.jpeg">
           </ion-avatar>
@@ -73,14 +73,14 @@
           Contoh kedua dari penggunaan komponen card ionic untuk kalangan pribadi
         </ion-card-content>
         <ion-row>
-          <ion-col >
+          <ion-col>
             <button ion-button clear small icon-start>
               <ion-icon name="thumbs-up"></ion-icon>
               14 Like
             </button>
           </ion-col>
 
-          <ion-col >
+          <ion-col>
             <button ion-button clear small icon-start>
               <ion-icon name="eye"></ion-icon>
               Komentar
@@ -93,6 +93,74 @@
             </ion-note>
           </ion-col>
         </ion-row>
+      </ion-card>
+
+      <br>
+      <hr>
+      <h3>Maps Card</h3>
+      <ion-card class="cssMapsCard">
+        <div class='cssMapsawal'>
+          <img src="assets/imgs/card-3.png" alt="">
+
+          <ion-fab right top>
+            <button ion-fab class='cssIonFab'>
+              <ion-icon name="pin"></ion-icon>
+            </button>
+          </ion-fab>
+
+          <ion-item>
+            <ion-icon name="football" large item-start></ion-icon>
+            <h2>Lapangan Bola Pelita</h2>
+            <p>Jalan pendidikan No.109 Gusit</p>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="wine" large item-start></ion-icon>
+            <h2>Rumah Makan Padang</h2>
+            <p>Jl. Soekarno no.109</p>
+          </ion-item>
+
+          <ion-item actions>
+            <span ion-text item-start color="secondary">18 Menit</span>
+            <span ion-text item-start color="dark">(12 Km)</span>
+            <button ion-button small clear icon-only item-end>
+              <ion-icon name="navigate"></ion-icon>
+              Start
+            </button>
+          </ion-item>
+        </div>
+      </ion-card>
+
+      <ion-card>
+        <div class='cssMapsawal'>
+          <img src="assets/imgs/card-2.png" alt="peta">
+          <ion-fab right top>
+            <button ion-fab >
+              <ion-icon name="pin"></ion-icon>
+            </button>
+          </ion-fab>
+
+          <ion-item >
+            <ion-icon name="football" large item-start></ion-icon>
+            <h2>Smk Swasta Pembda Nias</h2>
+            <p>Jl. Pelita No.73</p>
+          </ion-item>
+
+          <ion-item >
+            <ion-icon name="wine" large item-start></ion-icon>
+            <h2>Bank Sumut Nias</h2>
+            <p>Jl. Kesawan No.108 Gusit</p>
+          </ion-item>
+
+          <ion-item>
+            <span ion-text color='secondary' item-start>20 Menit</span>
+            <span ion-text color='dark' item-start>(13 KM)</span>
+            <button ion-button clear small icon-only item-end>
+              <ion-icon name="navigate"></ion-icon>
+              Start
+            </button>
+          </ion-item>
+        </div>
       </ion-card>
 
     </div>

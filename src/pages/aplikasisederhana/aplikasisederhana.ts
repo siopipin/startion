@@ -3,6 +3,7 @@ import { AppdatamhsPage } from './appdatamhs/appdatamhs';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AplikasihobiPage } from './aplikasihobi/aplikasihobi';
+import { AppsTugasHarianPage } from '../apps-tugas-harian/apps-tugas-harian';
 
 /**
  * Generated class for the AplikasisederhanaPage page.
@@ -31,5 +32,9 @@ export class AplikasisederhanaPage {
 
   GotoAppHobi(){
     this.navCtrl.push(AplikasihobiPage);
+  }
+
+  gotoAppsHarian(){
+    this.navCtrl.push(AppsTugasHarianPage);
   }
 }

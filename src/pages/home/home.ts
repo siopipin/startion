@@ -23,6 +23,8 @@ import { LamanLoadingPage } from '../laman-loading/laman-loading';
 import { LamanPopoverPage } from '../laman-popover/laman-popover';
 import { LamaninvinityscrollPage } from '../lamaninvinityscroll/lamaninvinityscroll';
 import { BadgesPage } from '../badges/badges';
+import { CheckboxPage } from '../checkbox/checkbox';
+import { DateTimePage } from '../date-time/date-time';
 
 
 /**
@@ -138,5 +140,13 @@ export class HomePage {
 
   gotoCardsPage(){
     this.navCtrl.push(CardsPage);
+  }
+
+  gotoCheckboxPage(){
+    this.navCtrl.push(CheckboxPage);
+  }
+
+  gotoDateTime(){
+    this.navCtrl.push(DateTimePage);
   }
 }
