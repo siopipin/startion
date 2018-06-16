@@ -1,2 +1,28 @@
 page-cards{
+
+  //ini untuk background card
+  .cssBackground{
+    ion-card{
+      position: relative;
+      text-align: center;
+    }
+
+    .cssJudul{
+      position: absolute;
+      top: 36%;
+      font-size: 2.0em;
+      color: #fff;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    .cssSubjudul{
+      color: #fff;
+      top: 55%;
+      position: absolute;
+      width: 100%;
+      font-size: 1.0em;
+
+    }
+  }
 }

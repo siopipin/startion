@@ -26,7 +26,75 @@
   <div [ngSwitch]="pilihan">
     <div *ngSwitchCase="'materi'">
       <br>
-      <h3>Cards components</h3>
+      <h3>Social Card</h3>
+      <ion-card>
+        <ion-item >
+          <ion-avatar item-left>
+            <img src="assets/avatar/itemionic.png">
+          </ion-avatar>
+          <h2>Sio Jurnalis Pipin</h2>
+          <p>Programmer</p>
+        </ion-item>
+        <img src="/assets/imgs/card-3.png" alt="pemandangan">
+        <ion-card-content>
+          Ini adalah contoh penggunaan card komponen ionic untuk advance sosial. Tampilan ini hanya sebagai contoh.
+        </ion-card-content>
+        <ion-row>
+          <ion-col >
+            <button ion-button small clear icon-start>
+              <ion-icon name="thumbs-up" ></ion-icon>
+              12 Like
+            </button>
+          </ion-col>
+          <ion-col >
+            <button ion-button small clear icon-start>
+              <ion-icon name="eye"></ion-icon>
+              Komentar
+            </button>
+          </ion-col>
+          <ion-col align-self-center text-center>
+            <ion-note>
+              11 Jam
+            </ion-note>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+      <ion-card>
+        <ion-item >
+          <ion-avatar item-left>
+            <img src="assets/avatar/a2.jpeg">
+          </ion-avatar>
+          <h2>Sio Herman Wijaya Kusuma</h2>
+          <p>My brother</p>
+        </ion-item>
+        <img src="assets/imgs/card-1.png" alt="gedung">
+        <ion-card-content>
+          Contoh kedua dari penggunaan komponen card ionic untuk kalangan pribadi
+        </ion-card-content>
+        <ion-row>
+          <ion-col >
+            <button ion-button clear small icon-start>
+              <ion-icon name="thumbs-up"></ion-icon>
+              14 Like
+            </button>
+          </ion-col>
+
+          <ion-col >
+            <button ion-button clear small icon-start>
+              <ion-icon name="eye"></ion-icon>
+              Komentar
+            </button>
+          </ion-col>
+
+          <ion-col text-center>
+            <ion-note>
+              13 Jam
+            </ion-note>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
     </div>
     <div *ngSwitchCase="'contoh'">
       <br>
@@ -78,7 +146,7 @@
           Ini adalah contoh penggunaan card dengan gambar dan konten disertai beberapa icon di bawa kontent.
         </ion-card-content>
         <ion-row no-padding>
-          <ion-col >
+          <ion-col>
             <button ion-button small clear icon-start>
               <ion-icon name="star"></ion-icon>
               Favorite
@@ -101,6 +169,12 @@
           <img src="assets/imgs/card-1.png" alt="">
           <div class="cssJudul">Rumah Impian</div>
           <div class="cssSubjudul">Keterangan Gambar</div>
+        </ion-card>
+
+        <ion-card>
+          <img src="assets/imgs/card-2.png" alt="rumah">
+          <div class='cssJudul'>Kota Impian</div>
+          <div class='cssSubjudul'>Keterangan Gambar</div>
         </ion-card>
       </div>
     </div>
