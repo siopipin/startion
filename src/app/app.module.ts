@@ -1,3 +1,6 @@
+import { GridPage } from './../pages/grid/grid';
+import { GesturePage } from './../pages/gesture/gesture';
+import { FabsPage } from './../pages/fabs/fabs';
 import { AppsTugasHarianPage } from "./../pages/apps-tugas-harian/apps-tugas-harian";
 import { CheckboxPage } from "./../pages/checkbox/checkbox";
 import { CardsPage } from "./../pages/cards/cards";
@@ -115,7 +118,10 @@ import { DateTimePage } from '../pages/date-time/date-time';
     CheckboxPage,
     AppsTugasHarianPage,
     MoreTugasPage,
-    DateTimePage
+    DateTimePage,
+    FabsPage,
+    GesturePage,
+    GridPage
   ],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
@@ -172,7 +178,10 @@ import { DateTimePage } from '../pages/date-time/date-time';
     CheckboxPage,
     AppsTugasHarianPage,
     MoreTugasPage,
-    DateTimePage
+    DateTimePage,
+    FabsPage,
+    GesturePage,
+    GridPage
   ],
   providers: [
     StatusBar,

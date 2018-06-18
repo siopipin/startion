@@ -1,4 +1,3 @@
-import { TUGAS } from "./../../app/app.config";
 import { Component } from "@angular/core";
 import {
   IonicPage,

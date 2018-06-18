@@ -1,3 +1,5 @@
+import { GridPage } from './../grid/grid';
+import { FabsPage } from './../fabs/fabs';
 import { CardsPage } from './../cards/cards';
 import { LamantoasPage } from './../lamantoas/lamantoas';
 import { ActionsheetPage } from './../actionsheet/actionsheet';
@@ -25,6 +27,7 @@ import { LamaninvinityscrollPage } from '../lamaninvinityscroll/lamaninvinityscr
 import { BadgesPage } from '../badges/badges';
 import { CheckboxPage } from '../checkbox/checkbox';
 import { DateTimePage } from '../date-time/date-time';
+import { GesturePage } from '../gesture/gesture';
 
 
 /**
@@ -148,5 +151,17 @@ export class HomePage {
 
   gotoDateTime(){
     this.navCtrl.push(DateTimePage);
+  }
+
+  gotoFabsPage(){
+    this.navCtrl.push(FabsPage);
+  }
+
+  gotoGesturePage(){
+    this.navCtrl.push(GesturePage);
+  }
+
+  gotoGridpage(){
+    this.navCtrl.push(GridPage);
   }
 }

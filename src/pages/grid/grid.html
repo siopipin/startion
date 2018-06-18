@@ -1,0 +1,406 @@
+<!--
+  Generated template for the GridPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Grid</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-icon name="heart" isActive="true"></ion-icon>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="assets/imgs/card-1.png" alt="">
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img src="assets/imgs/card-2.png" alt="">
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            Judul Berita
+          </ion-card-header>
+          <ion-card-content>
+            Ini adalah judul
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            Judul Berita
+          </ion-card-header>
+          <ion-card-content>
+            Ini adalah judul
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            Judul Berita
+          </ion-card-header>
+          <ion-card-content>
+            Ini adalah judul
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        1 dari 4
+      </ion-col>
+      <ion-col>
+        2 dari 4
+      </ion-col>
+      <ion-col>
+        3 dari 4
+      </ion-col>
+      <ion-col>
+        4 dari 4
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <br>
+  <hr>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-avatar item-left>
+          <img src="/assets/avatar/a1.png">
+        </ion-avatar>
+      </ion-col>
+      <ion-col col-6>
+        <ion-avatar item-left>
+          <img src="/assets/avatar/a1.png">
+        </ion-avatar>
+      </ion-col>
+      <ion-col>
+        <ion-avatar item-left>
+          <img src="/assets/avatar/a1.png">
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        1 dari 3
+      </ion-col>
+      <ion-col>
+        2 dari 3
+      </ion-col>
+      <ion-col col-auto>
+        Ini adalah kolom otomatis
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <hr>
+  <br>
+  <h2>All Breakpoin</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        Col 4
+      </ion-col>
+      <ion-col col-2>
+        Col 2
+      </ion-col>
+      <ion-col col-2>
+        Col 2
+      </ion-col>
+      <ion-col col-4>
+        Col 4
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <hr>
+  <br>
+  <h3>Stacked to horizontal</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 col-sm>
+        <ion-card>
+          <ion-card-header>
+            Judul ini adalah
+          </ion-card-header>
+          <ion-card-content>
+            Ini adalah kontent
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-12 col-sm>
+        <ion-card>
+          <ion-card-header>
+            Berita hari ini
+          </ion-card-header>
+          <ion-card-content>
+            ini adalah konten terbaik
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-12 col-sm>
+        <ion-card>
+          <ion-card-header>
+            Judul hari ini
+          </ion-card-header>
+          <ion-card-content>
+            contoh penggunaan col
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-12 col-sm>
+        <ion-card>
+          <ion-card-header>
+            Akhirnya ini yg terakhir
+          </ion-card-header>
+          <ion-card-content>
+            Berikut adalah kontent
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <hr>
+  <br>
+  <h2>Reordering</h2>
+  <h3>Offsetting columns</h3>
+  <p>Move columns to the right by adding the offset-* attributes. These attributes increase the margin start of the column by
+    * columns. For example, in the following grid the last column will be offset by 3 columns and take up 3 columns:</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <ion-item>
+          <ion-label>label</ion-label>
+          <ion-checkbox checked="true"></ion-checkbox>
+        </ion-item>
+      </ion-col>
+      <ion-col col-3 offset-3>
+        Ini adalah contoh offset
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br>
+  <hr>
+  <p>Offsets can also be added based on screen breakpoints. Here's an example of a grid where the last column will be offset
+    by 3 columns for md screens and up:</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-md-3>
+        1 of 3
+      </ion-col>
+      <ion-col col-md-3>
+        2 of 3
+      </ion-col>
+      <ion-col col-md-3 offset-md-3>
+        3 of 3
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <hr>
+  <br>
+  <h3>Push and pull</h3>
+  <p>
+    Reorder the columns by adding the push-* and pull-* attributes. These attributes adjust the left and right of the columns
+    by * columns making it easy to reorder columns. For example, in the following grid the column with the 1st col description
+    will actually be the last column and the 2nd col will be the first column.</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-9 push-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3 pull-9>
+        2 of 2
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br>
+  <p>
+    Push and pull can also be added based on screen breakpoints. In the following example, the column with the 3rd column description
+    will actually be the first column for md screens and up:</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-md-6 push-md-3>
+        1 of 3
+      </ion-col>
+      <ion-col col-md-3 push-md-3>
+        2 of 3
+      </ion-col>
+      <ion-col col-md-3 pull-md-9>
+        3 of 3
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br>
+  <br>
+  <h2>Alignment</h2>
+  <h3>Vertical alignment</h3>
+  <p>
+    All columns can be vertically aligned inside of a row by adding different attributes to the row. For a list of available
+    attributes, see row attributes.</p>
+  <ion-grid>
+    <ion-row align-items-start>
+      <ion-col>
+        1 of 4
+      </ion-col>
+      <ion-col>
+        2 of 4
+      </ion-col>
+      <ion-col>
+        3 of 4
+      </ion-col>
+      <ion-col>
+        4 of 4
+        <br>#
+        <br>#
+        <br>#
+      </ion-col>
+    </ion-row>
+
+    <ion-row align-items-center>
+      <ion-col>
+        1 of 4
+      </ion-col>
+      <ion-col>
+        2 of 4
+      </ion-col>
+      <ion-col>
+        3 of 4
+      </ion-col>
+      <ion-col>
+        4 of 4
+        <br>#
+        <br>#
+        <br>#
+      </ion-col>
+    </ion-row>
+
+    <ion-row align-items-end>
+      <ion-col>
+        1 of 4
+      </ion-col>
+      <ion-col>
+        2 of 4
+      </ion-col>
+      <ion-col>
+        3 of 4
+      </ion-col>
+      <ion-col>
+        4 of 4
+        <br>#
+        <br>#
+        <br>#
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <hr>
+  <br>
+  <p>
+    Columns can also align themselves differently than other columns by adding the alignment attribute directly to the column.
+    For a list of available attributes, see column attributes.</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-start>
+        <div>
+          1 of 4
+        </div>
+      </ion-col>
+      <ion-col align-self-center>
+        <div>
+          2 of 4
+        </div>
+      </ion-col>
+      <ion-col align-self-end>
+        <div>
+          3 of 4
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          4 of 4
+          <br>#
+          <br>#
+          <br>#
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <hr>
+  <br>
+  <h3>Horizontal alignment</h3>
+  <p>
+    All columns can be horizontally aligned inside of a row by adding different attributes to the row. For a list of available
+    attributes, see row attributes.
+  </p>
+  <ion-grid>
+    <ion-row justify-content-start>
+      <ion-col col-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3>
+        2 of 2
+      </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-center>
+      <ion-col col-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3>
+        2 of 2
+      </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-end>
+      <ion-col col-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3>
+        2 of 2
+      </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-around>
+      <ion-col col-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3>
+        2 of 2
+      </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-between>
+      <ion-col col-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3>
+        2 of 2
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
