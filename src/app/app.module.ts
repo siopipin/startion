@@ -1,3 +1,5 @@
+import { LamanhttpPage } from './../pages/lamanhttp/lamanhttp';
+
 import { GridPage } from './../pages/grid/grid';
 import { GesturePage } from './../pages/gesture/gesture';
 import { FabsPage } from './../pages/fabs/fabs';
@@ -64,6 +66,9 @@ import { BadgesPage } from "../pages/badges/badges";
 import { MoreTugasPage } from "../pages/more-tugas/more-tugas";
 import { DateTimePage } from '../pages/date-time/date-time';
 
+//module 8
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -121,9 +126,13 @@ import { DateTimePage } from '../pages/date-time/date-time';
     DateTimePage,
     FabsPage,
     GesturePage,
-    GridPage
+    GridPage,
+    LamanhttpPage
   ],
-  imports: [BrowserModule, IonicModule.forRoot(MyApp)],
+  imports: [
+    BrowserModule,
+    HttpClientModule, //ini untuk module 8
+    IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
@@ -181,7 +190,8 @@ import { DateTimePage } from '../pages/date-time/date-time';
     DateTimePage,
     FabsPage,
     GesturePage,
-    GridPage
+    GridPage,
+    LamanhttpPage
   ],
   providers: [
     StatusBar,

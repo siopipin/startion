@@ -1,3 +1,4 @@
+import { LamanhttpPage } from '../lamanhttp/lamanhttp';
 import { GridPage } from './../grid/grid';
 import { FabsPage } from './../fabs/fabs';
 import { CardsPage } from './../cards/cards';
@@ -28,7 +29,6 @@ import { BadgesPage } from '../badges/badges';
 import { CheckboxPage } from '../checkbox/checkbox';
 import { DateTimePage } from '../date-time/date-time';
 import { GesturePage } from '../gesture/gesture';
-
 
 /**
  * Generated class for the HomePage page.
@@ -163,5 +163,9 @@ export class HomePage {
 
   gotoGridpage(){
     this.navCtrl.push(GridPage);
+  }
+
+  gotoLamanHttp(){
+    this.navCtrl.push(LamanhttpPage);
   }
 }
